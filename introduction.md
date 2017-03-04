@@ -1,0 +1,5 @@
+# Introduction
+
+Modern technologies enable students to acquire new language skills with relative ease compared to traditional means. Many have taken up this opportunity and released pioneering educational software, which takes advantage of contemporary personal computers and, perhaps most importantly, smart devices. Although a lot of these products employ features that make them appealing to use, few come close to immersion found in traditional videogame products, a characteristic which is of paramount importance to user retention and in turn effectiveness of these solutions in the long term.
+
+The purpose of this thesis is to draw from the best game design, programming and educational practices and to ultimately create a prototype of a full-fledged interactive videogame experience that facilitates learning Japanese kanji characters.
