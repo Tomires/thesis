@@ -63,6 +63,8 @@ As with Memrise and Duolingo, Wanikani includes a profile system, which shows us
 
 In order to execute special attacks, the player has to draw a kanji character with a correct stroke order. The player also encounters small mini games along the way which include tasks such as putting kanji characters representing numbers in correct numerical order. The queries get progressively harder the longer the player practices the kanji in question. In the first phase, they are guided by outlines of the character, afterwards they have to make do with stroke order. In the final phase, the game gives them a blank slate. The training mode which can be accessed via the main menu allows the player to practice kanji independently from their progress in the story mode.
 
+![alt text](images/fude1.png "Fude Samurai")
+
 #### Game mechanics
 
 Fude Samurai is a one button fighter designed with mobile controls in mind. The game is relatively simple to control and rewards fast reflexes rather than strategy.
@@ -73,9 +75,22 @@ Fude Samurai is a one button fighter designed with mobile controls in mind. The 
 
 At set intervals throughout the level, the player is presented with ar review screen that highlights onyomi and kunyomi readings for a set amount of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
 
+![alt text](images/owaru1.png "Kanji no Owari")
+
 #### Game mechanics
 
 According to the developers, Kanji no Owari is a role-playing game. While it includes certain elements typical for RPG games, such as variable (and upgradable) statistics, the effect on gameplay is rather insignificant. Player amasses virtual currency through play, which they can use to buy items that help them progress through levels, for example a vial that replenishes health. Gameplay revolves around defeating monsters by answering quickly to queries. At the end of each level, the player faces a boss enemy, which differs from other kinds of enemies by posessing a large amount of hitpoints, therefore increasing the amount of queries generated.
+
+## Turn-based role playing games
+
+### Fire Emblem
+
+The game features a battle system that alternates between the player and the AI. Both sides possess control over multiple characters and as such can move and execute actions on each individual character. The routine is as follows - player first moves the character to a new location and then has the option to either do nothing, attack using the weapon, use a spell or utilise an item. After performing an action, the character is deactivated for the rest of the turn. Attacks do not feature any king of randomness, value is strictly determined by the level of each character.
+
+![alt text](images/fire1.png "Dofus")
+
+### Dofus
+![alt text](images/dofus.png "Dofus")
 
 
 
