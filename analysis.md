@@ -85,11 +85,14 @@ According to the developers, Kanji no Owari is a role-playing game. While it inc
 
 ### Fire Emblem
 
-The game features a battle system that alternates between the player and the AI. Both sides possess control over multiple characters and as such can move and execute actions on each individual character. The routine is as follows - player first moves the character to a new location and then has the option to either do nothing, attack using the weapon, use a spell or utilise an item. After performing an action, the character is deactivated for the rest of the turn. Attacks do not feature any king of randomness, value is strictly determined by the level of each character.
+The game features a battle system that alternates between the player and the AI. Both sides possess control over multiple characters and as such can move and execute actions on each individual character. The routine is as follows - player first moves the character to a new location and then has the option to either do nothing, attack using a weapon, use a spell or utilise an item. After performing an action, the character is deactivated for the rest of the turn. Attacks do not feature any kind of randomness, damage value is strictly determined by statistics of each characters. These statistics are improved when the character levels up, the stat distribution is pre-determined to the best of my knowledge. When performing an offensive action, the target has a chance to execute a counter-attack. This depends on the character type. Melee characters cannot counter ranged attacks and characters that have received a fatal blow aren't given a chance to fight back.
 
-![alt text](images/fire1.png "Dofus")
+![alt text](images/fire1.png "Fire Emblem")
 
 ### Dofus
+
+This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accomodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of sumonning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
+
 ![alt text](images/dofus.png "Dofus")
 
 
