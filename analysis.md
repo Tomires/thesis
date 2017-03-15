@@ -4,7 +4,7 @@ In this chapter I will introduce some of the many examples of non-gaming educati
 
 ## Non-gaming applications
 
-There is currently an abundance of non-gaming applications available on the market that utilize spaced repetition for learning purposes. The most popular examples are Anki, Memrise, Duolingo and Wanikani, just to name a few. With the exception of Anki, which is a lightweight application with a do-it-yourself approach, all of these applications include a gamification element, which gratifies the learner by providing virtual badges, leaderboards and progress indicators. These functions are geared towards stimulating competitiveness, a basic human trait, which in turn keeps the player coming back for more.
+There is currently an abundance of non-gaming applications available on the market that utilize spaced repetition for learning purposes. The most popular examples are Anki, Memrise, Duolingo and Wanikani, just to name a few. Apart from Anki, which is a lightweight application with a do-it-yourself approach, all of these applications include a gamification element, which gratifies the learner by providing virtual badges, leaderboards and progress indicators. These functions are geared towards stimulating competitiveness, a basic human trait, which in turn keeps the player coming back for more.
 
 ### Memrise
 
@@ -33,9 +33,9 @@ Another gamification feature used is called *Streak Clock*, which grants the pla
 
 #### Learning element
 
-In contrast with Memrise, Duolingo offers a unified learning experience for each language. Courses place a significant emphasis on grammar and are divided into sections, which are further divided into lessons. Progress through sections is strictly linear, in order to unlock the next section, user has to first complete a set number of lessons and pass a test.
+In contrast with Memrise, Duolingo offers a unified learning experience for each language. Courses place a significant emphasis on grammar and are divided into sections, which are further divided into lessons. Progress through sections is strictly linear. In order to unlock the next section, the user has to first complete a set number of lessons and pass a test.
 
-In addition to the learning experience, there is also a review mode, which works exactly the same as in Memrise's case.
+In addition to the learning experience, there is also a review mode, which works the same as in Memrise's case.
 
 ![Duolingo](images/duolingo.png)
 
@@ -73,13 +73,13 @@ Fude Samurai is a one button fighter designed with mobile controls in mind. The 
 
 #### Learning element
 
-At set intervals throughout the level, the player is presented with ar review screen that highlights onyomi and kunyomi readings for a set amount of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
+At set intervals throughout the level, the player is presented with ar review screen that highlights onyomi and kunyomi readings for a set number of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
 
 ![Kanji no Owari](images/owaru1.png)
 
 #### Game mechanics
 
-According to the developers, Kanji no Owari is a role-playing game. While it includes certain elements typical for RPG games, such as variable (and upgradable) statistics, the effect on gameplay is rather insignificant. Player amasses virtual currency through play, which they can use to buy items that help them progress through levels, for example a vial that replenishes health. Gameplay revolves around defeating monsters by answering quickly to queries. At the end of each level, the player faces a boss enemy, which differs from other kinds of enemies by posessing a large amount of hitpoints, therefore increasing the amount of queries generated.
+According to the developers, Kanji no Owari is a role-playing game. While it includes certain elements typical for RPG games, such as variable (and upgradable) statistics, the effect on gameplay is rather insignificant. Player amasses virtual currency through play, which they can use to buy items that help them progress through levels, for example a vial that replenishes health. Gameplay revolves around defeating monsters by answering quickly to queries. At the end of each level, the player faces a boss enemy, which differs from other kinds of enemies by possessing a large amount of hitpoints, therefore increasing the number of queries generated.
 
 ## Turn-based role playing games
 
@@ -91,7 +91,7 @@ The game features a battle system that alternates between the player and the AI.
 
 ### Dofus
 
-This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accomodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of sumonning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
+This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accommodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of summoning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
 
 ![Dofus](images/dofus.png)
 
