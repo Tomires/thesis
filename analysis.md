@@ -19,7 +19,7 @@ Content in Memrise is divided into languages, which are further divided into cou
 
 As we can see, the system includes two primary modes of repetition - one that selects phrases depending on time passed since last review and one that selects phrases that have been entered incorrectly a large amount of times.
 
-![alt text](images/memrise.png "Memrise")
+![Memrise](images/memrise.png)
 
 #### Gamification
 
@@ -37,7 +37,7 @@ In contrast with Memrise, Duolingo offers a unified learning experience for each
 
 In addition to the learning experience, there is also a review mode, which works exactly the same as in Memrise's case.
 
-![alt text](images/duolingo.png "Duolingo")
+![Duolingo](images/duolingo.png)
 
 #### Gamification
 
@@ -49,7 +49,7 @@ Duolingo includes most if not all gamification elements of Memrise. A *Daily Goa
 
 The user interface of Wanikani is rather different from the previous two examples. The learning experience consists of learning radicals (building blocks of kanji characters), utilising said radicals in kanji and ultimately combining kanji characters into vocabulary. Although the idea of building blocks appears solid, the application feels more like an encyclopaedia rather than a learning program and the testing functions look spartan compared to aforementioned examples and feel like an afterthought.
 
-![alt text](images/wanikani.png "Wanikani")
+![Wanikani](images/wanikani.png)
 
 #### Gamification
 
@@ -63,7 +63,7 @@ As with Memrise and Duolingo, Wanikani includes a profile system, which shows us
 
 In order to execute special attacks, the player has to draw a kanji character with a correct stroke order. The player also encounters small mini games along the way which include tasks such as putting kanji characters representing numbers in correct numerical order. The queries get progressively harder the longer the player practices the kanji in question. In the first phase, they are guided by outlines of the character, afterwards they have to make do with stroke order. In the final phase, the game gives them a blank slate. The training mode which can be accessed via the main menu allows the player to practice kanji independently from their progress in the story mode.
 
-![alt text](images/fude1.png "Fude Samurai")
+![Fude Samurai](images/fude1.png)
 
 #### Game mechanics
 
@@ -75,7 +75,7 @@ Fude Samurai is a one button fighter designed with mobile controls in mind. The 
 
 At set intervals throughout the level, the player is presented with ar review screen that highlights onyomi and kunyomi readings for a set amount of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
 
-![alt text](images/owaru1.png "Kanji no Owari")
+![Kanji no Owari](images/owaru1.png)
 
 #### Game mechanics
 
@@ -85,15 +85,15 @@ According to the developers, Kanji no Owari is a role-playing game. While it inc
 
 ### Fire Emblem
 
-The game features a battle system that alternates between the player and the AI. Both sides possess control over multiple characters and as such can move and execute actions on each individual character. The routine is as follows - player first moves the character to a new location and then has the option to either do nothing, attack using a weapon, use a spell or utilise an item. After performing an action, the character is deactivated for the rest of the turn. Attacks do not feature any kind of randomness, damage value is strictly determined by statistics of each characters. These statistics are improved when the character levels up, the stat distribution is pre-determined to the best of my knowledge. When performing an offensive action, the target has a chance to execute a counter-attack. This depends on the character type. Melee characters cannot counter ranged attacks and characters that have received a fatal blow aren't given a chance to fight back.
+The game features a battle system that alternates between the player and the AI. Both sides possess control over multiple characters and as such can move and execute actions with each individual character. The routine is as follows - player first moves the character to a new location and then has the option to either do nothing, attack using a weapon, use a spell or utilise an item. After performing an action, the character is deactivated for the rest of the turn. Attacks do not feature any kind of randomness, damage value is strictly determined by statistics of each characters. These statistics are improved when the character levels up, the stat distribution is pre-determined to the best of my knowledge. When performing an offensive action, the target has a chance to execute a counter-attack. This depends on the character type. Melee characters cannot counter ranged attacks and characters that have received a fatal blow aren't given a chance to fight back.
 
-![alt text](images/fire1.png "Fire Emblem")
+![Fire Emblem](images/fire1.png)
 
 ### Dofus
 
 This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accomodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of sumonning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
 
-![alt text](images/dofus.png "Dofus")
+![Dofus](images/dofus.png)
 
 
 
