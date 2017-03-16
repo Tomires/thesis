@@ -73,7 +73,7 @@ Fude Samurai is a one button fighter designed with mobile controls in mind. The 
 
 #### Learning element
 
-At set intervals throughout the level, the player is presented with ar review screen that highlights onyomi and kunyomi readings for a set number of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
+At set intervals throughout the level, the player is presented with a review screen that highlights onyomi and kunyomi readings for a set number of kanji characters. These kanji characters then appear in queries that the player must answer in order to defeat incoming waves of enemies. It appears that every level includes a predetermined set of kanji for the player to practice.
 
 ![Kanji no Owari](images/owaru1.png)
 
