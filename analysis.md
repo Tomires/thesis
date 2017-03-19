@@ -81,6 +81,18 @@ At set intervals throughout the level, the player is presented with a review scr
 
 According to the developers, Kanji no Owari is a role-playing game. While it includes certain elements typical for RPG games, such as variable (and upgradable) statistics, the effect on gameplay is rather insignificant. Player amasses virtual currency through play, which they can use to buy items that help them progress through levels, for example a vial that replenishes health. Gameplay revolves around defeating monsters by answering quickly to queries. At the end of each level, the player faces a boss enemy, which differs from other kinds of enemies by possessing a large amount of hitpoints, therefore increasing the number of queries generated.
 
+### Learn Japanese To Survive! Hiragana Battle
+
+#### Learning elements
+
+Unlike the rest of the games mentioned, the player is taught hiragana instead of kanji. Players are taught new syllables in sets of five during dialogues with NPCs. They are also shown the pronunciation, draw order, albeit in a non-interactive fashion. Immediately afterwards, they are tested on the newly gained knowledge via a series of queries. Hiragana characters appear in battles as enemies. The player is required to enter correct transcription in latin script for each character in order to have a chance at damaging it using weapons or spells. The game also includes a quest system, which teaches the player a small amount of vocabulary and factual information about Japan.
+
+![Learn Japanese To Survive! Hiragana Battle](images/hirbattle.png)
+
+#### Game mechanics
+
+The game is similar in play style to earlier entries in the Final Fantasy series. Players conduct turn-based battles in a traditional JRPG style. Battles take place at random intervals throughout the exploration experience, a mechanic often referred to in the gaming circles as a "random encounter".
+
 ## Turn-based role playing games
 
 ### Fire Emblem
