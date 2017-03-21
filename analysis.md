@@ -97,7 +97,7 @@ The game is similar in play style to earlier entries in the Final Fantasy series
 
 ## Turn-based role playing games
 
-The following two examples are meant to illustrate different approaches to a turn-based RPG, the variations of which are used in virtually every game in the genre. The first example allows for one action per turn (per character), while the second lets the player take multiple actions over the course of a turn.
+The following two examples have been chosen to illustrate different approaches to a turn-based RPG, the variations of which are used in virtually every game in the genre. The first example allows for one action per turn (per character), while the second lets the player take multiple actions over the course of a turn.
 
 ### Fire Emblem
 
