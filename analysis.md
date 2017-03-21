@@ -57,6 +57,8 @@ As with Memrise and Duolingo, Wanikani includes a profile system, which shows us
 
 ## Gaming applications
 
+The realm of gaming applications that are focused on teaching Japanese is comparatively small. It is very important to distinguish between true gaming experiences and simple mechanics borrowed from the gaming industry. For example, there is a number of "games", whose sole gaming mechanic is the concept of hit points with no further interactivity other than selecting answers to queries. For the purpose of this thesis, we will not classify these applications as games, but rather as non-gaming applications with a gamification element. I have selected three examples that can be thought of as videogames in their own rights.
+
 ### Fude Samurai
 
 #### Learning element
@@ -85,7 +87,7 @@ According to the developers, Kanji no Owari is a role-playing game. While it inc
 
 #### Learning elements
 
-Unlike the rest of the games mentioned, the player is taught hiragana instead of kanji. Players are taught new syllables in sets of five during dialogues with NPCs. They are also shown the pronunciation, draw order, albeit in a non-interactive fashion. Immediately afterwards, they are tested on the newly gained knowledge via a series of queries. Hiragana characters appear in battles as enemies. The player is required to enter correct transcription in latin script for each character in order to have a chance at damaging it using weapons or spells. The game also includes a quest system, which teaches the player a small amount of vocabulary and factual information about Japan.
+Unlike the rest of the games mentioned, the player is taught hiragana instead of kanji. Players are taught new syllables in sets of five during dialogues with NPCs. They are also shown the pronunciation, draw order, albeit in a non-interactive fashion. Immediately afterwards, they are tested on the newly gained knowledge via a series of queries. Hiragana characters appear in battles as enemies. The player is required to enter correct transcription in latin script for each character to have a chance at inflicting damage using weapons or spells. The game also includes a quest system, which teaches the player a small amount of vocabulary and factual information about Japan.
 
 ![Learn Japanese To Survive! Hiragana Battle](images/hirbattle.png)
 
@@ -94,6 +96,8 @@ Unlike the rest of the games mentioned, the player is taught hiragana instead of
 The game is similar in play style to earlier entries in the Final Fantasy series. Players conduct turn-based battles in a traditional JRPG style. Battles take place at random intervals throughout the exploration experience, a mechanic often referred to in the gaming circles as a "random encounter".
 
 ## Turn-based role playing games
+
+The following two examples are meant to illustrate different approaches to a turn-based RPG, the variations of which are used in virtually every game in the genre. The first example allows for one action per turn (per character), while the second lets the player take multiple actions over the course of a turn.
 
 ### Fire Emblem
 
@@ -106,8 +110,6 @@ The game features a battle system that alternates between the player and the AI.
 This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accommodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of summoning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
 
 ![Dofus](images/dofus.png)
-
-
 
 [//]: <> (Memrise - vocabulary)
 [//]: <> (Duolingo - grammar)
