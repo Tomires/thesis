@@ -41,4 +41,27 @@ The file includes two arrays. The first array is used for less powerful spells a
 ]
 ```
 
+#### Spellbook
+
+The file includes an array of spells used in the game. Each spell has a name, mana cost and a difficulty which corresponds to each of the arrays in dictionary and accept values of either 1 or 2. Spells have a base damage, which decreases with time used up by player to answer the query, minimal and maximal range in cells indicating distance from player character.
+
+Damage range can either be set to 1 which inflicts damage only on the selected cell or a larger integer, which also affects a corresponding number of surrounding cells - an effect often referred to in video game design as an Area of Effect (AoE) spell. The Linear AoE attribute can be set to 1 to make the spell affect targets behind the selected cell (from player character's point of view), 2 to inflict damage to targets in-between the player character and selected cell or 0 to use the more traditional planar AoE.
+
+```JSON
+[
+
+{
+  "name": "Whirl",
+  "cost": 2,
+  "kanji_difficulty": 1,
+  "base_damage": 45,
+  "min_range": 1,
+  "max_range": 1,
+  "damage_range": 1,
+  "linear_aoe": 0
+},
+...
+]
+```
+
 ### Components
