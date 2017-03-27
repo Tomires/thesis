@@ -20,4 +20,25 @@ The game uses four map layers to store data:
 3. logic - used by the battle logic script to determine whether a cell is accessible
 4. terrain - contains base tiles
 
+#### Dictionary
+
+The file includes two arrays. The first array is used for less powerful spells and includes individual characters, which exclusively use kun'yomi readings, the second includes more complex composite characters used for more powerful spells, typically using on'yomi readings. Each entry includes a kanji character, its kana transcription and an English translation.
+
+```JSON
+[
+
+[{"kanji": "日", "kana": "ひ", "meaning": "day"},
+{"kanji": "人", "kana": "ひと", "meaning": "person"},
+...
+],
+
+[
+{"kanji": "銀行", "kana": "ぎんこう", "meaning": "bank"},
+{"kanji": "小説", "kana": "しょうせつ", "meaning": "novel"}
+...
+]
+
+]
+```
+
 ### Components
