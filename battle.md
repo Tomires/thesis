@@ -63,5 +63,23 @@ Damage range can either be set to 1 which inflicts damage only on the selected c
 ...
 ]
 ```
+#### Enemy
+
+The file includes information about all enemies in the game. Each enemy entry contains a type definition used internally within the game, name displayed as part of battle GUI, initial health value, number of moves, base damage and attack range.
+
+```JSON
+[
+
+{
+  "type": "big_bunny",
+  "name": "Big Bunny",
+  "health": 60,
+  "movement_pool": 3,
+  "attack": 6,
+  "range": 1
+},
+...
+]
+```
 
 ### Components
