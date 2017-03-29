@@ -5,7 +5,7 @@
 
 ![Architecture diagram](images/diagram_battle.png)
 
-### Data
+### Data structures
 
 The following section includes details on structures of persistent files used throughout the battle part of the game. With the sole exception of map files, all files are in human-readable JSON format.
 
@@ -82,4 +82,46 @@ The file includes information about all enemies in the game. Each enemy entry co
 ]
 ```
 
-### Components
+### Script entities
+
+The following section contains information about script entities used within the battle part of the game.
+
+#### Battle Logic
+
+Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A-star algorithm is used to find the shortest paths for enemies to follow. Validity of cells in regards to movement and/or casting is determined from the map's logic layer.
+
+#### Battle GUI
+
+Updates information present on the game's user interface. The script also manages all keyboard and mouse/touch input from the player when a battle is ongoing.
+
+#### Dictionary
+
+This script is utilized during the process of casting a spell. It chooses a kanji with the lowest success rate from the dictionary data structure to use during a query. After completion of the query, it saves the result to a save file.
+
+#### Kana Parser
+
+Works in conjunction with Battle GUI to translate latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. **More complex cases, such as insertion of sokuon characters are dealt with in the same fashion as Microsoft Input Method Editor for Japanese.**
+
+**ADD STATE AUTOMATA?**
+
+#### Challenges
+
+Picks two random entries from the list of available challenges and afterwards keeps track of their status (in progress, successfully completed, failed). Due to the need to incorporate hooks into other scripts, the challenge list is hardcoded and therefore doesn't depend on an external data structure.
+
+#### Spell
+
+Determines valid targets during the spell casting process based on information present in the spellbook data structure and logic layer of the current map. Also calculates damage based on time taken by the player to answer a query and base damage of the selected spell.
+
+#### Map
+
+Renders terrain tiles, objects and characters in a correct order based on information included within the map data structure as well as parameters passed from outside scripts. Positions are calculated using the following transformation matrix.
+
+**ADD MATRIX**
+
+The script also handles conversion between input coordinates and the game's coordinate system.
+
+#### Camera
+
+Moves the camera game object in a smooth fashion.
+
+**INTERPOLATION DETAILS**
