@@ -6,12 +6,18 @@ The following section details choices made regarding key design elements include
 
 ### Battle flow
 
-In the chapter concerning existing products, I have detailed two common approaches used within the turn-based RPG genre. In Fire Emblem and similar JRPGs, in each turn the player moves a character and then performs a single action, be it using an item, casting a spell or staying still. I feel this approach works best in games that introduce player control over multiple characters. The other mainstream approach is to allow the player to move and cast spells freely during each turn.
+In the chapter concerning existing products, I have detailed two common approaches used within the turn-based RPG genre. In Fire Emblem and similar JRPGs, in each turn the player moves a character and then performs a single action, be it using an item, casting a spell or staying still. I feel this approach works best in games that introduce player control over multiple characters. In games with a single controllable character, this approach feels too simplistic and furthermore limits the learning element of the game.
 
-Utilizing this design choice, each spell in the game is given a mana cost that depends on spell's power. A mana pool of certain size is refilled at the beginning of each turn and allows the player to cast multiple spells.
-Correspondingly...
+The other mainstream approach is to allow the player to move and cast spells freely during each turn. Utilizing this design choice, each spell in the game is given a mana cost that depends on spell's power. A mana pool of certain size is refilled at the beginning of each turn and allows the player to cast multiple spells. Correspondingly the player is allocated a certain number of movement points that they can utilize during each turn.
 
 ### Learning element
+
+Each spell has a kanji difficulty setting associated with it that controls which set of phrases is chosen. As with the mana cost, more powerful spells trigger a choice of more complex kanji phrases.
+
+During the process of choosing phrases for the game, I have decided to divide these into two sets. The first contains kun'yomi readings of characters and therefore includes mostly verbs. The second contains on'yomi readings, which are typically present in kanji compounds.
+
+After casting a spell, the player is presented with a query containing a kanji character and is required to type a correct kana transcription. Each spell..
+
 [//]: <> (spelldifficulty)
 
 ### Challenge system
