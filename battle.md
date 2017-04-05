@@ -143,6 +143,4 @@ The script also handles conversion between input coordinates and the game's coor
 
 #### Camera
 
-Moves the camera game object in a smooth fashion.
-
-**INTERPOLATION DETAILS**
+Moves the camera game object in a smooth fashion using linear interpolation with variable speed.
