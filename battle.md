@@ -1,4 +1,4 @@
-# Battle System
+# Battle system
 
 ## Introduction
 
@@ -107,7 +107,7 @@ The file includes information about all enemies in the game. Each enemy entry co
 
 The following section contains information about script entities used within the battle part of the game.
 
-#### Battle Logic
+#### Battle logic
 
 Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A-star algorithm is used to find the shortest paths for enemies to follow. Validity of cells in regards to movement and/or casting is determined from the map's logic layer.
 
@@ -119,7 +119,7 @@ Updates information present on the game's user interface. The script also manage
 
 This script is utilized during the process of casting a spell. It chooses a kanji with the lowest success rate from the dictionary data structure to use during a query. After completion of the query, it saves the result to a save file.
 
-#### Kana Parser
+#### Kana parser
 
 Works in conjunction with Battle GUI to translate latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. The solution for more complex cases, such as the insertion of sokuon characters is inspired by the behaviour of Microsoft Input Method Editor for Japanese.
 
