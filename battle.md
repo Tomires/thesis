@@ -135,11 +135,11 @@ Determines valid targets during the spell casting process based on information p
 
 #### Map
 
-Renders terrain tiles, objects and characters in a correct order based on information included within the map data structure as well as parameters passed from outside scripts. Positions are calculated using the following transformation matrix.
+Renders terrain tiles, objects and characters in a correct order based on information included within the map data structure as well as parameters passed from outside scripts.
 
-**ADD MATRIX**
+The script also handles conversion between input coordinates and the game's coordinate system. Map coordinates are calculated using the following transformation matrix.
 
-The script also handles conversion between input coordinates and the game's coordinate system.
+![Transformation matrix used to convert pixel coordinates into map coordinates](images/screen_to_coord_transform.gif)
 
 #### Camera
 
