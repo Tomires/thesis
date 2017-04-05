@@ -1,5 +1,20 @@
 # Battle System
+
 ## Introduction
+
+The following section details choices made regarding key design elements included within the battle system and the motivations behind those choices.
+
+### Battle flow
+
+In the chapter concerning existing products, I have detailed two common approaches used within the turn-based RPG genre. In Fire Emblem and similar JRPGs, in each turn the player moves a character and then performs a single action, be it using an item, casting a spell or staying still. I feel this approach works best in games that introduce player control over multiple characters. The other mainstream approach is to allow the player to move and cast spells freely during each turn.
+
+Utilizing this design choice, each spell in the game is given a mana cost that depends on spell's power. A mana pool of certain size is refilled at the beginning of each turn and allows the player to cast multiple spells.
+Correspondingly...
+
+### Learning element
+[//]: <> (spelldifficulty)
+
+### Challenge system
 
 ## Architecture
 
