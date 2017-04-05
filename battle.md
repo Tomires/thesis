@@ -16,11 +16,11 @@ Each spell has a kanji difficulty setting associated with it that controls which
 
 During the process of choosing phrases for the game, I have decided to divide these into two sets. The first contains kun'yomi readings of characters and therefore includes mostly verbs. The second contains on'yomi readings, which are typically present in kanji compounds.
 
-After casting a spell, the player is presented with a query containing a kanji character and is required to type a correct kana transcription. Each spell..
-
-[//]: <> (spelldifficulty)
+After casting a spell, the player is presented with a query containing a kanji character and they are required to type a correct kana transcription. Each spell has a set base damage, which decreases depending on the time it takes to answer the query.
 
 ### Challenge system
+
+The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition.
 
 ## Architecture
 
