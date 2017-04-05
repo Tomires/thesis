@@ -115,7 +115,7 @@ This script is utilized during the process of casting a spell. It chooses a kanj
 
 #### Kana Parser
 
-Works in conjunction with Battle GUI to translate latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. **More complex cases, such as insertion of sokuon characters are dealt with in the same fashion as Microsoft Input Method Editor for Japanese.**
+Works in conjunction with Battle GUI to translate latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. The solution for more complex cases, such as the insertion of sokuon characters is inspired by the behaviour of Microsoft Input Method Editor for Japanese.
 
 **ADD STATE AUTOMATA?**
 
