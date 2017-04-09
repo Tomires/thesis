@@ -1,6 +1,44 @@
 # Technology used
 
+This chapter includes tools utilised during development of the game and discusses motivations behind choosing individual parts of the development stack.
+
 ## Defold
+
+Going into development, I had three basic requirements for the programming tool used in the process. First, it has to support all major desktop and mobile platforms in order to satisfy our supportability requirements.
+
+The other two requirements have been set in order to attempt to hasten the development process as creating a fully functioning prototype of an educational RPG by one programmer in approximately four months of time is a rather idealistic goal, especially for someone with no prior game programming experience. These are choosing a tool that includes an intuitive IDE with a fast learning curve as opposed to a bare bones library and one that is geared specifically towards creating 2D games in order to reduce the need for performance optimization.
+
+![Screenshot of Tiled Map Editor](images/defold.png)
+
+**engine comparison table?**
+
+I have chosen Defold as the platform of choice as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script.
+
+The basic building block used in Defold is called a game object. Game objects can include scripts that control their behaviour, sprites controlling their visual appearance, factories that can be configured to create other game objects and a variety of other components.
+
+Game objects are grouped inside collections, which typically correspond to scenes used within the game (e.g. menu, battle, exploration). Communication between objects is handled through a built-in message passing system. Thanks to this system, the programmer seldom has to use the update loop.
+
+The following is an excerpt from code showcasing the messaging system in action. The target of our message is the 'map controller' game object located inside the 'battle' collection. The portion behind the hash character is the component we want to address, in this case a script. The message title is given as the second argument, the third optional argument contains a Lua table that includes variables passed a part of the message.
+
+```Lua
+msg.post("battle:/map_controller#script","attack_enemy",
+         {enemy_number = enemy_num, direction = direction})
+
+```
+
+On the receiving end, all we have to do is to add a construct inside the preset on_message function that resolves the message.
+
+```Lua
+function on_message(self, message_id, m, sender)
+  if message_id == hash("attack_enemy") then
+    if m.direction == "N" then
+      msg.post(self.enemies[m.enemy_number],
+               "play_animation", {id = hash("back_attack")})
+...
+
+```
+
+**discuss other main Defold concepts?**
 
 ## Tiled Map Editor
 
@@ -13,3 +51,5 @@ The output file includes tile definitions (pairings of image file and its size w
 The second part of the output structure includes layer definitions. Each layer has a size, offset from origin and a serialized array which contains placed tiles.
 
 Please keep in mind that the aforementioned contents are in no way an exhaustive listing of data included in the output file.
+
+## Git
