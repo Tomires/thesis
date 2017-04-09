@@ -53,3 +53,9 @@ The second part of the output structure includes layer definitions. Each layer h
 Please keep in mind that the aforementioned contents are in no way an exhaustive listing of data included in the output file.
 
 ## Git
+
+Git has been chosen as the version control system for this project due to its integration into Defold's user interface and my general familiarity with the tool, though it is hardly practical for larger projects.
+
+One issue game developers might encounter while using Git are impracticalities stemming from versioning a large number of sizable binary files that make up the game's assets. The internal '.git' folder can reach large sizes and fetching changes from remote locations can take longer than necessary. Public hosting sites such as GitHub, GitLab and Bitbucket also enforce a size limit on repositories hosted on their sites.
+
+There are two solutions to this problem. One is to use a different VCS such as Subversion, which is better suited to dealing with binary files. The other is to utilise what's known as Git Large File Storage, an open-source tool which replaces large files with pointers to a remote location.
