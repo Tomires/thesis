@@ -4,7 +4,7 @@ This chapter includes tools utilised during development of the game and discusse
 
 ## Defold
 
-Going into development, I had three basic requirements for the programming tool used in the process. First, it has to support all major desktop and mobile platforms in order to satisfy our supportability requirements.
+Going into development, I had three basic requirements for the programming tool used in the process. First, it has to support all major desktop and mobile platforms in order to satisfy the supportability requirements.
 
 The other two requirements have been set in order to attempt to hasten the development process as creating a fully functioning prototype of an educational RPG by one programmer in approximately four months of time is a rather idealistic goal, especially for someone with no prior game programming experience. These are choosing a tool that includes an intuitive IDE with a fast learning curve as opposed to a bare bones library and one that is geared specifically towards creating 2D games in order to reduce the need for performance optimization.
 
@@ -12,7 +12,7 @@ The other two requirements have been set in order to attempt to hasten the devel
 
 **engine comparison table?**
 
-I have chosen Defold as the platform of choice as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script. Defold uses Lua, a lightweight dynamically typed programming language, often used in game development.
+I have chosen Defold as the development platform as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script. Defold uses Lua, a lightweight dynamically typed programming language, often used in game development.
 
 The basic building block used in Defold is called a game object. Game objects can include scripts that control their behaviour, sprites controlling their visual appearance, factories that can be configured to create other game objects and a variety of other components.
 
