@@ -12,7 +12,7 @@ The other two requirements have been set in order to attempt to hasten the devel
 
 **engine comparison table?**
 
-I have chosen Defold as the platform of choice as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script.
+I have chosen Defold as the platform of choice as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script. Defold uses Lua, a lightweight dynamically typed programming language, often used in game development.
 
 The basic building block used in Defold is called a game object. Game objects can include scripts that control their behaviour, sprites controlling their visual appearance, factories that can be configured to create other game objects and a variety of other components.
 
