@@ -78,4 +78,19 @@
 ]
 ```
 
+#### Map areas
+
+```JSON
+[
+
+  {
+    "id": 5,
+    "name": "Rabbit Island",
+    "enemy_types": [[1, 0.2], [2, 0.1]],
+    "max_mob_size": 4
+  }
+...
+]
+```
+
 ### Script entities
