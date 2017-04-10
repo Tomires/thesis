@@ -38,8 +38,6 @@ function on_message(self, message_id, m, sender)
 
 ```
 
-**discuss other main Defold concepts?**
-
 ## Tiled Map Editor
 
 As of April 2017 Defold does not include native support for non-orthogonal tilemaps. Fortunately, there is a number of platform-agnostic map editors available including Tiled, an open-source offering in active development since 2008. It is by far the most popular choice with 2D game creators. I have chosen this software because it enables creation of isometric tilemaps, a deliberate design choice for my game.
