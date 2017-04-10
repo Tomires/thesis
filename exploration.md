@@ -78,7 +78,7 @@
 ]
 ```
 
-#### Map areas
+#### Map area
 
 ```JSON
 [
