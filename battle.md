@@ -123,7 +123,33 @@ This script is utilized during the process of casting a spell. It chooses a kanj
 
 Works in conjunction with Battle GUI to translate latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. The solution for more complex cases, such as the insertion of sokuon characters is inspired by the behaviour of Microsoft Input Method Editor for Japanese.
 
-**ADD STATE AUTOMATA?**
+![Simplified state automata for first two rows of the hiragana conversion table](images/kana_parser.png)
+
+|   | a | i | u | e | o | ya | yu | yo
+| :------------- | :------------- |
+|   | あ | い | う | え | お | や | ゆ | よ
+| **k** | か | き | く | け | こ | きゃ | きゅ | きょ
+| **s** | さ | ー | す | せ | そ | ー | ー | ー
+| **t** | た | ー | ー | て | と | ー | ー | ー
+| **n** | な | に | ぬ | ね | の | にゃ | にゅ | にょ
+| **h** | は | ひ | ー | へ | ほ | ひゃ | ひゅ | ひょ
+| **m** | ま | み | む | め | も | みゃ | みゅ | みょ
+| **y** | や | ー | ゆ | ー | よ | ー | ー | ー
+| **r** | ら | り | る | れ | ろ | りゃ | りゅ | りょ
+| **w** | わ | ー | ー | ー | を | ー | ー | ー
+| **g** | が | ぎ | ぐ | げ | ご | ぎゃ | ぎゅ | ぎょ
+| **z** | ざ | ー | ず | ぜ | ぞ | ー | ー | ー
+| **d** | だ | ー | ー | で | ど | ー | ー | ー
+| **b** | ば | び | ぶ | べ | ぼ | びゃ | びゅ | びょ
+| **p** | ぱ | ぴ | ぷ | ぺ | ぽ | ぴゃ | ぴゅ | ぴょ
+
+| Romaji | Kana | Romaji | Kana | Romaji | Kana
+| :------------- | :------------- |
+| n | ん | fu | ふ | shi | し
+| sha | しゃ | shu | しゅ | sho | しょ
+| chi | ち | tsu | つ　| cha | ちゃ
+| chu | ちゅ | cho | ちょ　| ji | じ
+| ja | じゃ | ju | じゅ　| jo | じょ
 
 #### Challenges
 
