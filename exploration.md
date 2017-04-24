@@ -25,6 +25,29 @@
 ]
 ```
 
+#### Droprate
+
+```JSON
+[
+
+  {
+    "enemy_id": 1,
+    "items": [
+        {
+            "item_id": 1,
+            "probability": 0.3
+        },
+        {
+            "item_id": 3,
+            "probability": 0.7
+        }
+    ]
+  },
+
+...
+]
+```
+
 #### NPC
 
 ```JSON
