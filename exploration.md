@@ -2,7 +2,7 @@
 
 ## Introduction
 
-### Quest
+### Questing system
 
 The quest system is an important plot device that motivates the player to play the game and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means to motivating the player to move between game areas and variability.
 
@@ -28,7 +28,7 @@ One issue a lot of modern role-playing games face is the lack of variability whe
 - Gathering quest (collecting a number of resources from enemies or crafting nodes)
 - Achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges)
 
-### Item types
+### Item system
 
 The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects and resources, which are used for completing quests or further refinement via crafting.
 
@@ -36,7 +36,7 @@ The game has three categories of items. Equipment, which the player can wear to 
 
 Equipment in most modern role-playing games is designed to increase arbitrary player statistics. As a player, I feel this approach is rather artificial and lacking. Besides, in an educational game, focus should be given on the educational element. The proficiency of the player should be the main factor in determining their potency.
 
-Therefore, I have designed the equipment to alter game mechanics in ways that both benefit and punish the player in certain areas. For example, certain players might prefer to have more time when answering queries. They can wear an item that increases available time, but decreases damage that the spell causes. Other players could prefer the opposite, so another item will exist which decreases available time and increases damage caused, thus rewarding faster memory recall skills.
+Therefore, I have designed the equipment to alter game mechanics in ways that both benefit and punish the player in certain areas, a mechanic similar to the Idol system in Dofus. For example, certain players might prefer to have more time when answering queries. They can wear an item that increases available time, but decreases damage that the spell causes. Other players could prefer the opposite, so another item will exist which decreases available time and increases damage caused, thus rewarding faster memory recall skills.
 
 #### Consumables
 
