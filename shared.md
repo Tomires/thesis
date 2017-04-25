@@ -16,15 +16,15 @@ While trying both approaches, I have come across a large difference in performan
 
 **object pooling**
 
-
-
 ## Architecture
-
-**INSERT DIAGRAM**
 
 ### Data structures
 
 The following section includes details on structures of persistent files used throughout the entirety of the game. Both the map files and the persistence module are stored inside files containing Lua tables.
+
+#### Persistence module
+
+The persistence module acts as a save file. It contains data on player's success rate for each kanji phrase, entries on active and completed quests, current NPC dialogs, items located in player's inventory, their level and experience points, which determine the size of the kanji selection pool.
 
 #### Map
 
@@ -36,10 +36,6 @@ The game uses four map layers to store data:
 2. object - contains smaller obstacles such as rocks or tile decorations
 3. logic - used by the battle logic script to determine whether a cell is accessible
 4. terrain - contains base tiles
-
-#### Persistence module
-
-The persistence module acts as a save file. It contains data on player's success rate for each kanji phrase, entries on active and completed quests, current NPC dialogs, items located in player's inventory, their level and experience points, which determine the size of the kanji selection pool.
 
 ### Script entities
 
