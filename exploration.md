@@ -8,7 +8,7 @@ The quest system is an important plot device that motivates the player to play t
 
 #### Repeatability
 
-The first aspect concerns quests that are meant to be experienced multiple times.
+The first aspect concerns quests that are meant to be experienced multiple times. Repeatable quests entice the player to return to previous areas and usually provide rewards that are exclusive to a particular region of the map they take place in.
 
 #### Exploration quests
 
@@ -47,6 +47,10 @@ Consumable items are meant to be used within the game's battle mode. They genera
 The resources category contains items that can be used to create consumables, used in gathering quests or do not perform any function other than generating profit for the player via the mechanic of selling the item to the vendor NPC.
 
 ### Economy
+
+### Learning progression
+
+
 
 ## Architecture
 
