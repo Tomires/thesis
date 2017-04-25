@@ -25,8 +25,26 @@ One issue a lot of modern role-playing games face is the lack of variability whe
 - Character hunting quest (triggering conversations with different NPCs)
 - Scavenger hunt (locating certain cues hidden within the environment)
 - Enemy killing quest (killing a number of enemies of a specified type)
-- Crafting quest (collecting a number of resources from crafting nodes)
+- Gathering quest (collecting a number of resources from enemies or crafting nodes)
 - Achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges)
+
+### Item types
+
+The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects and resources, which are used for completing quests or further refinement via crafting.
+
+#### Equipment
+
+Equipment in most modern role-playing games is designed to increase arbitrary player statistics. As a player, I feel this approach is rather artificial and lacking. Besides, in an educational game, focus should be given on the educational element. The proficiency of the player should be the main factor in determining their potency.
+
+Therefore, I have designed the equipment to alter game mechanics in ways that both benefit and punish the player in certain areas. For example, certain players might prefer to have more time when answering queries. They can wear an item that increases available time, but decreases damage that the spell causes. Other players could prefer the opposite, so another item will exist which decreases available time and increases damage caused, thus rewarding faster memory recall skills.
+
+#### Consumables
+
+Consumable items are meant to be used within the game's battle mode. They generally provide additional health points to the player and would be required for more difficult fights. They can also provide supplementary effects such as temporary stuns, increase available movement points and more. No consumables should provide damage dealing capabilities as doing so would interfere with spells and the associated learning element. When using a consumable, the player does not have to answer a query.
+
+#### Resources
+
+The resources category contains items that can be used to create consumables, used in gathering quests or do not perform any function other than generating profit for the player via the mechanic of selling the item to the vendor NPC.
 
 ### Economy
 
