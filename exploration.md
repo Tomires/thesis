@@ -2,6 +2,34 @@
 
 ## Introduction
 
+### Quest
+
+The quest system is an important plot device that motivates the player to play the game and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means to motivating the player to move between game areas and variability.
+
+#### Repeatability
+
+The first aspect concerns quests that are meant to be experienced multiple times.
+
+#### Exploration quests
+
+These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. For the sake of simplicity, I will work with branching quest arcs. No two quests will be mutually exclusive.
+
+The following diagram illustrates the relationships between quests, green exclamation marks symbolize main quests, while yellow marks symbolize side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
+
+![Quests diagram](images/diagram_quests.png)
+
+#### Variability
+
+One issue a lot of modern role-playing games face is the lack of variability when it comes to quests. The player is generally asked to kill a certain number of enemies or to collect certain items. To help combat this fact, I have listed below some examples that can be used within my game.
+
+- Character hunting quest (triggering conversations with different NPCs)
+- Scavenger hunt (locating certain cues hidden within the environment)
+- Enemy killing quest (killing a number of enemies of a specified type)
+- Crafting quest (collecting a number of resources from crafting nodes)
+- Achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges)
+
+### Economy
+
 ## Architecture
 
 ### Data structures
