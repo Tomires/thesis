@@ -12,7 +12,7 @@ As I do not use Defold's built-in tile editor, I had to write my own routine for
 
 There are two programmatic approaches we can use to implement dynamic tile rendering. One is to remove game object instances that are no longer visible and add new instances. The other is to keep the existing game objects and move them from their original position to the new position. The developer can also decide on whether to complete the entire operation at once or whether to divide the process into steps that line up with character movement.
 
-While trying both approaches, I have come across a large difference in performance, although on further inspection I found out it was due to lack of optimization on my part. I used to unnecessarily iterate through structural metadata about tilesets while preparing every single tile. I have managed to mitigate this issue by creating a Lua table that stores tileset data about every used tile style.
+While trying both approaches, I have come across a large difference in performance, although on further inspection I found out it was due to lack of optimization on my part. I used to unnecessarily iterate through structural metadata about tilesets while preparing every single tile. I managed to mitigate this issue by creating a Lua table that stores tileset data about every used tile style.
 
 **comparison between two methods**
 linear camera movement

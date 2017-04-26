@@ -4,7 +4,7 @@
 
 ### Questing system
 
-The quest system is an important plot device that motivates the player and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means to motivating the player to move between game areas and variability.
+The quest system is an important plot device that motivates the player and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means of motivating the player to move between game areas and variability.
 
 #### Repeatability
 
@@ -12,9 +12,9 @@ The first aspect concerns quests that are meant to be experienced multiple times
 
 #### Exploration quests
 
-These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. For the sake of simplicity, I will work with branching quest arcs. No two quests can be mutually exclusive.
+These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. I will work with branching quest arcs, however, for the sake of simplicity, no two quests can be mutually exclusive.
 
-The following diagram illustrates the relationships between quests, green exclamation marks symbolize main quests, while yellow marks symbolize side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
+The following diagram illustrates the relationships between quests. Green exclamation marks symbolize main quests, while yellow marks symbolize side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
 
 ![Quests diagram](images/diagram_quests.png)
 
@@ -30,7 +30,7 @@ One issue a lot of modern role-playing games face is the lack of variability whe
 
 ### Item system
 
-The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects and resources, which are used for completing quests or can be further refined via crafting.
+The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects, and resources, which are used for completing quests or can be further refined via crafting.
 
 #### Equipment
 
@@ -40,11 +40,11 @@ Therefore, I have designed the equipment to alter game mechanics in ways that bo
 
 #### Consumables
 
-Consumable items are meant to be used within the game's battle mode. They generally provide additional health points to the player and would be required for more difficult fights. They can also provide supplementary effects such as temporary stuns, increase available movement points and more. No consumables should provide damage dealing capabilities as doing so would interfere with spells and the associated learning element. When using a consumable, the player does not have to answer a query.
+Consumable items are meant to be used within the game's battle mode. They generally provide additional health points to the player and would be essential for more difficult fights. They can also provide supplementary effects such as temporary stuns, increase available movement points and more. No consumables should provide damage dealing capabilities as doing so would interfere with spells and the associated learning element. When using a consumable, the player does not have to answer a query.
 
 #### Resources
 
-The resources category contains items that can be used to create consumables, used in gathering quests or do not perform any function other than generating profit for the player via the mechanic of selling the item to the vendor NPC.
+The resources category contains items that can be used to create consumables, used in gathering quests, or do not perform any function other than generating profit for the player via the mechanic of selling the item to the vendor NPC.
 
 ### Economy
 
