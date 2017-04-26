@@ -4,7 +4,7 @@
 
 ### Questing system
 
-The quest system is an important plot device that motivates the player to play the game and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means to motivating the player to move between game areas and variability.
+The quest system is an important plot device that motivates the player and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means to motivating the player to move between game areas and variability.
 
 #### Repeatability
 
@@ -12,7 +12,7 @@ The first aspect concerns quests that are meant to be experienced multiple times
 
 #### Exploration quests
 
-These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. For the sake of simplicity, I will work with branching quest arcs. No two quests will be mutually exclusive.
+These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. For the sake of simplicity, I will work with branching quest arcs. No two quests can be mutually exclusive.
 
 The following diagram illustrates the relationships between quests, green exclamation marks symbolize main quests, while yellow marks symbolize side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
 
@@ -24,13 +24,13 @@ One issue a lot of modern role-playing games face is the lack of variability whe
 
 - Character hunting quest (triggering conversations with different NPCs)
 - Scavenger hunt (locating certain cues hidden within the environment)
-- Enemy killing quest (killing a number of enemies of a specified type)
+- Enemy killing quest (killing a number of enemies of a specific type)
 - Gathering quest (collecting a number of resources from enemies or crafting nodes)
 - Achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges)
 
 ### Item system
 
-The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects and resources, which are used for completing quests or further refinement via crafting.
+The game has three categories of items. Equipment, which the player can wear to change the behaviour of certain parts of the game, consumables that they can use in battle to increase health and potentially cause other effects and resources, which are used for completing quests or can be further refined via crafting.
 
 #### Equipment
 
