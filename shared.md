@@ -10,14 +10,12 @@ The persistence module stores all non-static information and changes dynamically
 
 As I do not use Defold's built-in tile editor, I had to write my own routine for rendering tiles. Due to the large size of maps used within the exploration mode, rendering all the tiles at once would use up a significant amount of system resources. For example, a map with a size of 100 by 100 tiles would require the engine to store 30,000 sprites (each tile game object has three sprites associated with it - the terrain, object and a selection image). To optimize the performance, we have to render only tiles that are visible within the current camera view.
 
-There are two programmatic approaches we can use to implement dynamic tile rendering. One is to remove game object instances that are no longer visible and add new instances. The other is to keep the existing game objects and move them from their original position to the new position. The developer can also decide on whether to complete the entire operation at once or whether to divide the process into steps that line up with character movement.
+There are two programmatic approaches we can use to implement dynamic tile rendering. One is to remove game object instances that are no longer visible and add new instances. The other is to keep the existing game objects and move them from their original position to the new position. The practice of reusing intialised objects is called object pooling. It is used to mitigate performance issues when dealing with objects whose initialisation and destruction routines are resource intensive. Defold already has object pooling implemented on an engine level and the documentation specifically advises developers to use the earlier approach.
 
-While trying both approaches, I have come across a large difference in performance, although on further inspection I found out it was due to lack of optimization on my part. I used to unnecessarily iterate through structural metadata about tilesets while preparing every single tile. I managed to mitigate this issue by creating a Lua table that stores tileset data about every used tile style.
+The developer can also decide on whether to complete the entire operation at once or whether to divide the process into steps that line up with character movement.
 
-**comparison between two methods**
-linear camera movement
+While trying both approaches, I have come across a large difference in performance, although on further inspection I found out it was due to lack of optimization on my part. I used to unnecessarily iterate through structural metadata about tilesets while preparing every single tile. I managed to solve this issue by creating a Lua table that stores tileset data about every used tile style.
 
-**object pooling**
 
 ## Architecture
 
@@ -54,4 +52,6 @@ The script also handles conversion between input coordinates and the game's coor
 
 #### Camera
 
-Moves the camera game object in a smooth fashion using linear interpolation with variable speed.
+Moves the camera game object in a smooth fashion using linear interpolation with variable speed. I have decided on keeping the camera permanently locked on the player character's location. Originally, the camera moved to the target location in a straight line, but doing so presents a problem in specific environments, such as the one pictured below. If player were to move between the two points pictured, the player character would move off-screen, stay invisible for a couple seconds and then re-appear, which could confuse the player.
+
+![Transformation matrix used to convert pixel coordinates into map coordinates](images/camera_change.png)
