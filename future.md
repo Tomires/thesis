@@ -18,4 +18,4 @@ One interesting functionality an expansion can bring is the addition of a multip
 
 ## Other versions
 
-As the game's design is modular, it would be very easy to create a Chinese version of the game that would use Pinyin romanization instead of hiragana. I also have plans for a demo, which would teach the player hiragana characters, thus making the game more accessible to complete beginners in Japanese.
+As the game's design is modular, it would be very easy to create a Chinese version of the game that uses Pinyin romanization instead of hiragana. I also have plans for a demo, which would teach the player hiragana characters, thus making the game more accessible to complete beginners in Japanese.
