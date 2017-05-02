@@ -21,7 +21,7 @@ While trying both approaches, I have come across a large difference in performan
 
 ### Data structures
 
-The following section includes details on structures of persistent files used throughout the entirety of the game. Both the map files and the persistence module are stored inside files containing Lua tables.
+The following section includes details on structures of persistent files used throughout the entirety of the game. Both the map files and the persistence module are stored inside files containing Lua tables. The Level data structure is stored in a JSON file.
 
 #### Persistence module
 
@@ -37,6 +37,24 @@ The game uses four map layers to store data:
 2. object - contains smaller obstacles such as rocks or tile decorations
 3. logic - used by the battle logic script to determine whether a cell is accessible
 4. terrain - contains base tiles
+
+#### Level
+
+The file contains information on player levels and query phrases associated with them. Levels have an experience value associated with them. When a player gains a specified amount of experience, they reach a new level and unlock a new kanji character. This process widens the number of possible queries by adding phrases that contain the character. The 'basic' and 'complex' fields indicate the last phrase that can be shown to the player of that particular level. They correspond to the first and second arrays of the Dictionary data structure. Information on kun'yomi and on'yomi readings are also included for the Encyclopedia GUI to make use of.
+
+```JSON
+[
+    {
+        "kanji": "日",
+        "kun": "ひ",
+        "on": "にち",
+        "basic": 1,
+        "complex": 0,
+        "experience": 100
+    },
+    ...
+]
+```
 
 ### Script entities
 
