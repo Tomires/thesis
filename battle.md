@@ -36,18 +36,18 @@ The file includes two arrays. The first array is used for less powerful spells a
 
 ```JSON
 [
+    [
+        {"kanji": "日", "kana": "ひ", "meaning": "day"},
+        {"kanji": "本", "kana": "ほん", "meaning": "book"},
+        {"kanji": "人", "kana": "ひと", "meaning": "person"},
+        ...
+    ],
 
-[{"kanji": "日", "kana": "ひ", "meaning": "day"},
-{"kanji": "人", "kana": "ひと", "meaning": "person"},
-...
-],
-
-[
-{"kanji": "銀行", "kana": "ぎんこう", "meaning": "bank"},
-{"kanji": "小説", "kana": "しょうせつ", "meaning": "novel"}
-...
-]
-
+    [
+        {"kanji": "日本", "kana": "にほん", "meaning": "Japan"},
+        {"kanji": "日本人", "kana": "にほんじん", "meaning": "Japanese person"},
+        ...
+    ]
 ]
 ```
 
@@ -75,7 +75,7 @@ Damage range can either be set to 1 which inflicts damage only on the selected c
 ```
 #### Enemy
 
-The file includes information about all enemies in the game. Each enemy entry contains a type definition used internally within the game, name displayed as part of battle GUI, initial health value, number of moves, base damage and attack range.
+The file includes information about all enemies in the game. Each enemy entry contains a type definition used internally within the game, name displayed as part of battle GUI, initial health value, number of moves, base damage, attack range and number of experience points awarded to the player for a successful kill.
 
 ```JSON
 [
@@ -86,7 +86,8 @@ The file includes information about all enemies in the game. Each enemy entry co
   "health": 60,
   "movement_pool": 3,
   "attack": 6,
-  "range": 1
+  "range": 1,
+  "experience": 30
 },
 ...
 ]
