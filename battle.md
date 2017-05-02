@@ -60,17 +60,17 @@ Damage range can either be set to 1 which inflicts damage only on the selected c
 ```JSON
 [
 
-{
-  "name": "Whirl",
-  "cost": 2,
-  "kanji_difficulty": 1,
-  "base_damage": 45,
-  "min_range": 1,
-  "max_range": 1,
-  "damage_range": 1,
-  "linear_aoe": 0
-},
-...
+    {
+        "name": "Whirl",
+        "cost": 2,
+        "kanji_difficulty": 1,
+        "base_damage": 45,
+        "min_range": 1,
+        "max_range": 1,
+        "damage_range": 1,
+        "linear_aoe": 0
+    },
+    ...
 ]
 ```
 #### Enemy
@@ -80,15 +80,15 @@ The file includes information about all enemies in the game. Each enemy entry co
 ```JSON
 [
 
-{
-  "type": "big_bunny",
-  "name": "Big Bunny",
-  "health": 60,
-  "movement_pool": 3,
-  "attack": 6,
-  "range": 1,
-  "experience": 30
-},
+    {
+        "type": "big_bunny",
+        "name": "Big Bunny",
+        "health": 60,
+        "movement_pool": 3,
+        "attack": 6,
+        "range": 1,
+        "experience": 30
+    },
 ...
 ]
 ```

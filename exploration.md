@@ -61,17 +61,17 @@ The resources category contains items that can be used to create consumables, us
 ```JSON
 [
 
-  {
-    "id": 1,
-    "name": "Potion",
-    "icon": "potion.png",
-    "value": 30,
-    "category": "Consumable",
-    "effects": {
-        "health": 60
+    {
+        "id": 1,
+        "name": "Potion",
+        "icon": "potion.png",
+        "value": 30,
+        "category": "Consumable",
+        "effects": {
+            "health": 60
+        }
     }
-  }
-...
+    ...
 ]
 ```
 
@@ -80,21 +80,20 @@ The resources category contains items that can be used to create consumables, us
 ```JSON
 [
 
-  {
-    "enemy_id": 1,
-    "items": [
-        {
-            "item_id": 1,
-            "probability": 0.3
-        },
-        {
-            "item_id": 3,
-            "probability": 0.7
-        }
-    ]
-  },
-
-...
+    {
+        "enemy_id": 1,
+        "items": [
+            {
+                "item_id": 1,
+                "probability": 0.3
+            },
+            {
+                "item_id": 3,
+                "probability": 0.7
+            }
+        ]
+    },
+    ...
 ]
 ```
 
@@ -103,14 +102,14 @@ The resources category contains items that can be used to create consumables, us
 ```JSON
 [
 
-  {
-    "id": 1,
-    "name": "Old Guy",
-    "position": [12, 24],
-    "vendor": 0,
-    "starting_dialogue": 25
-  }
-...
+    {
+        "id": 1,
+        "name": "Old Guy",
+        "position": [12, 24],
+        "vendor": 0,
+        "starting_dialogue": 25
+    }
+    ...
 ]
 ```
 
@@ -119,11 +118,11 @@ The resources category contains items that can be used to create consumables, us
 ```JSON
 [
 
-  {
-    "id": 25,
-    "text": "I have a favour to ask.
-             My crops have been decimated by rabbits you see...",
-    "next_dialogue": 26
+    {
+        "id": 25,
+        "text": "I have a favour to ask.
+                My crops have been decimated by rabbits you see...",
+        "next_dialogue": 26
   }
 ...
 ]
@@ -134,21 +133,21 @@ The resources category contains items that can be used to create consumables, us
 ```JSON
 [
 
-  {
-    "id": 5,
-    "npc": 1,
-    "active": true,
-    "repeatable": false,
-    "description": "Reclaim the land by killing the Elder Rabbit
-                    and four of its friends!",
-    "prerequisites": [2],
-    "triggers": [["KILL_ENEMY", 2, 1], ["KILL_ENEMY", 1, 4]],
-    "exp_reward": 500,
-    "gold_reward": 60,
-    "item_reward": [1, 1, 5],
-    "set_npc_dialogue": 54
-  }
-...
+    {
+        "id": 5,
+        "npc": 1,
+        "active": true,
+        "repeatable": false,
+        "description": "Reclaim the land by killing the Elder Rabbit
+                        and four of its friends!",
+        "prerequisites": [2],
+        "triggers": [["KILL_ENEMY", 2, 1], ["KILL_ENEMY", 1, 4]],
+        "exp_reward": 500,
+        "gold_reward": 60,
+        "item_reward": [1, 1, 5],
+        "set_npc_dialogue": 54
+    }
+    ...
 ]
 ```
 
@@ -158,25 +157,31 @@ The file includes the name of each area, map file used and information about ene
 
 ```JSON
 [
-  {
-    "id": 1,
-    "name": "Rabbit Island",
-    "map_file": "ka_rabbit",
-    "enemy_types": [[1, 0.2], [2, 0.1]],
-    "max_mob_size": 4,
-    "enemy_mobs": [
-        {"enemies": [1],
-		 "position": [30, 66]},
-
-        {"enemies": [3, 2, 2, 1],
- 		 "position": [66, 22]},
-
-        {"position": [38, 27]},
- 		{"position": [36, 19]},
- 	...
-    ]
-  }
-...
+    {
+        "id": 1,
+        "name": "Rabbit Island",
+        "map_file": "ka_rabbit",
+        "enemy_types": [[1, 0.2], [2, 0.1]],
+        "max_mob_size": 4,
+        "enemy_mobs": [
+            {
+                "enemies": [1],
+		        "position": [30, 66]
+            },
+            {
+                "enemies": [3, 2, 2, 1],
+                "position": [66, 22]
+            },
+            {
+                "position": [38, 27]
+            },
+ 		    {
+                "position": [36, 19]
+            },
+ 	        ...
+        ]
+    }
+    ...
 ]
 ```
 

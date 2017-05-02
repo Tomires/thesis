@@ -110,7 +110,3 @@ The game features a battle system that alternates between the player and the AI.
 This massively multiplayer online game contains a world populated by other players. As such, many elements of the battle system are designed to accommodate this fact. Turns have a time limit and there is an entire category of spells used to buff friendly characters. Each player has a set amount of movement points and action points (APs) that they can utilise on each turn. Individual spells have an AP cost and some have a cooldown, which prevents them from being used in subsequent turns. Each individual player controls only one character. Although some character classes are capable of summoning friendly characters, these are controlled automatically. The game includes an in-battle challenge system, which rewards players for completing certain objectives, such as killing a certain enemy first or not losing any health throughout the fight.
 
 ![Dofus](images/dofus.png)
-
-[//]: <> (Memrise - vocabulary)
-[//]: <> (Duolingo - grammar)
-[//]: <> (Wanikani - kanji)
