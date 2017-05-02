@@ -54,9 +54,13 @@ The resources category contains items that can be used to create consumables, us
 
 ## Architecture
 
+**add diagram**
+
 ### Data structures
 
 #### Item
+
+This structure holds data on all items within the game. Each item entry contains an identifier, a name, filename for its inventory icon, value when sold to the vendor NPC, the category definition and effects of the item when used by the player, which are applicable for items from equipment and consumable categories.
 
 ```JSON
 [
@@ -64,7 +68,7 @@ The resources category contains items that can be used to create consumables, us
     {
         "id": 1,
         "name": "Potion",
-        "icon": "potion.png",
+        "icon": "potion",
         "value": 30,
         "category": "Consumable",
         "effects": {
@@ -76,6 +80,8 @@ The resources category contains items that can be used to create consumables, us
 ```
 
 #### Droprate
+
+This structure is used when determining spoils of battle. Each entry represents an enemy. In addition to the enemy identifier, it contains a nested array of items obtainable from winning a battle against that enemy. Each entry in this nested array contains an item identifier and a probability value, which is a positive number that determines the probability of dropping the item in decimal fractions.
 
 ```JSON
 [
@@ -115,6 +121,8 @@ The resources category contains items that can be used to create consumables, us
 
 #### Dialogue
 
+Dialogues in the game are ordered in a linear fashion. There are no instances of branching dialogues. Each dialogue entry contains an identifier, the dialogue text itself and an identifier of the follow-up dialogue, if applicable.
+
 ```JSON
 [
 
@@ -124,7 +132,7 @@ The resources category contains items that can be used to create consumables, us
                 My crops have been decimated by rabbits you see...",
         "next_dialogue": 26
   }
-...
+  ...
 ]
 ```
 
@@ -136,7 +144,6 @@ The resources category contains items that can be used to create consumables, us
     {
         "id": 5,
         "npc": 1,
-        "active": true,
         "repeatable": false,
         "description": "Reclaim the land by killing the Elder Rabbit
                         and four of its friends!",
@@ -153,7 +160,7 @@ The resources category contains items that can be used to create consumables, us
 
 #### Map area
 
-The file includes the name of each area, map file used and information about enemy mobs. Every mob has a position associated with it, the enemies respawn at the specified location on map load and then proceed to wander about. The level designer has an option to specify the number of enemies and their type for each mob in the 'enemies' array. This information is not required, if it is not provided, the map loading routine will generate a random assortment of enemies that can be controlled using the 'enemy_types' array and the 'max_mob_size' field. The former contains nested arrays, which specify enemy id and spawn probability. The sum of probabilities can be any positive number. The 'max_mob_size' field allows for choosing the maximum mob size as generated mobs differ in number of enemies.
+This structure includes the name of each area, map file used and information about enemy mobs. Every mob has a position associated with it, the enemies respawn at the specified location on map load and then proceed to wander about. The level designer has an option to specify the number of enemies and their type for each mob in the 'enemies' array. This information is not required, if it is not provided, the map loading routine will generate a random assortment of enemies that can be controlled using the 'enemy_types' array and the 'max_mob_size' field. The former contains nested arrays, which specify enemy id and spawn probability. The sum of probabilities can be any positive number. The 'max_mob_size' field allows for choosing the maximum mob size as generated mobs differ in number of enemies.
 
 ```JSON
 [
