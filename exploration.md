@@ -106,6 +106,7 @@ The resources category contains items that can be used to create consumables, us
   {
     "id": 1,
     "name": "Old Guy",
+    "position": [12, 24],
     "vendor": 0,
     "starting_dialogue": 25
   }
@@ -153,14 +154,27 @@ The resources category contains items that can be used to create consumables, us
 
 #### Map area
 
+The file includes the name of each area, map file used and information about enemy mobs. Every mob has a position associated with it, the enemies respawn at the specified location on map load and then proceed to wander about. The level designer has an option to specify the number of enemies and their type for each mob in the 'enemies' array. This information is not required, if it is not provided, the map loading routine will generate a random assortment of enemies that can be controlled using the 'enemy_types' array and the 'max_mob_size' field. The former contains nested arrays, which specify enemy id and spawn probability. The sum of probabilities can be any positive number. The 'max_mob_size' field allows for choosing the maximum mob size as generated mobs differ in number of enemies.
+
 ```JSON
 [
-
   {
-    "id": 5,
+    "id": 1,
     "name": "Rabbit Island",
+    "map_file": "ka_rabbit",
     "enemy_types": [[1, 0.2], [2, 0.1]],
-    "max_mob_size": 4
+    "max_mob_size": 4,
+    "enemy_mobs": [
+        {"enemies": [1],
+		 "position": [30, 66]},
+
+        {"enemies": [3, 2, 2, 1],
+ 		 "position": [66, 22]},
+
+        {"position": [38, 27]},
+ 		{"position": [36, 19]},
+ 	...
+    ]
   }
 ...
 ]
