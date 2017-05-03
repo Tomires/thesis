@@ -12,10 +12,10 @@ There is currently an abundance of non-gaming applications available on the mark
 
 Content in Memrise is divided into languages, which are further divided into courses made and maintained by end users. Learner can associate a course with their account and be nagged at a specific time during each day to practice. This mechanism helps maintain knowledge. Users interact with the learning system in the following ways:
 
-* **Learning mode** - the session consists of repeated queries on a number of new phrases
-* **Review mode** - player is given a set of queries on phrases that have not been practiced lately
-	* **Speed Review** - introduces stricter time constraints
-	* **My Difficult Words** - the session consists of queries on phrases that the player struggles with
+* learning mode - the session consists of repeated queries on a number of new phrases,
+* review mode - player is given a set of queries on phrases that have not been practiced lately,
+* speed review - introduces stricter time constraints,
+* my difficult words - the session consists of queries on phrases that the player struggles with.
 
 As we can see, the system includes two primary modes of repetition - one that selects phrases depending on time passed since last review and one that selects phrases that have been entered incorrectly a large amount of times.
 

@@ -33,10 +33,10 @@ Maps are stored in a Lua script file. Tiled export formats also include JSON and
 
 The game uses four map layers to store data:
 
-1. large_object - contains sprites spanning multiple tiles (e.g. trees)
-2. object - contains smaller obstacles such as rocks or tile decorations
-3. logic - used by the battle logic script to determine whether a cell is accessible
-4. terrain - contains base tiles
+1. large_object - contains sprites spanning multiple tiles (e.g. trees),
+2. object - contains smaller obstacles such as rocks or tile decorations,
+3. logic - used by the battle logic script to determine whether a cell is accessible,
+4. terrain - contains base tiles.
 
 #### Level
 

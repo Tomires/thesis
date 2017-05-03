@@ -20,13 +20,13 @@ The following diagram illustrates the relationships between quests. Green exclam
 
 #### Variability
 
-One issue a lot of modern role-playing games face is the lack of variability when it comes to quests. The player is generally asked to kill a certain number of enemies or to collect certain items. To help combat this fact, I have listed below some examples that can be used within my game.
+One issue a lot of modern role-playing games face is the lack of variability when it comes to quests. The player is generally asked to kill a certain number of enemies or to collect certain items. To help combat this fact, I have listed below some examples that can be used within my game:
 
-- Character hunting quest (triggering conversations with different NPCs)
-- Scavenger hunt (locating certain cues hidden within the environment)
-- Enemy killing quest (killing a number of enemies of a specific type)
-- Gathering quest (collecting a number of resources from enemies or crafting nodes)
-- Achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges)
+- character hunting quest (triggering conversations with different NPCs),
+- scavenger hunt (locating certain cues hidden within the environment),
+- enemy killing quest (killing a number of enemies of a specific type),
+- gathering quest (collecting a number of resources from enemies or crafting nodes),
+- achievement quest (meeting a condition, such as achieving consistent success in regards to the learning element or completing a number of challenges).
 
 ### Item system
 
