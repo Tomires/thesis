@@ -18,6 +18,8 @@ The basic building block used in Defold is called a game object. Game objects ca
 
 Game objects are grouped inside collections, which typically correspond to scenes used within the game (e.g. menu, battle, exploration). Communication between objects is handled through a built-in message passing system. Thanks to this system, the programmer seldom has to use the update loop.
 
+![Addressing hierarchy in Defold](images/defold_addressing.png)
+
 The following is an excerpt from code showcasing the messaging system in action. The target of our message is the 'map controller' game object located inside the 'battle' collection. The portion behind the hash character is the component we want to address, in this case a script. The message title is given as the second argument, the third optional argument contains a Lua table that includes variables passed a part of the message.
 
 ```Lua
