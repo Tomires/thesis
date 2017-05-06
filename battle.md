@@ -14,7 +14,7 @@ The other mainstream approach is to allow the player to move and cast spells fre
 
 Each spell has a kanji difficulty setting associated with it that controls which set of phrases is chosen. As with the mana cost, more powerful spells trigger a choice of more complex kanji phrases.
 
-During the process of choosing phrases for the game, I have decided to divide these into two sets. The first contains kun'yomi readings of characters and therefore includes mostly verbs. The second contains on'yomi readings, which are typically present in kanji compounds.
+During the process of choosing phrases for the game, I have decided to divide these into two sets. The first contains kun'yomi readings of characters and therefore includes mostly verbs. The second contains on'yomi readings, which are typically present in kanji compounds. The choice of kanji depends on player character's level and their previous actions. The system prioritizes kanji with high error rate.
 
 After casting a spell, the player is presented with a query containing a kanji character and they are required to type a correct kana transcription. Each spell has a set base damage, which decreases depending on the time it takes to answer the query.
 
@@ -81,8 +81,9 @@ The file includes information about all enemies in the game. Each enemy entry co
 [
 
     {
-        "type": "big_bunny",
-        "name": "Big Bunny",
+        "id": 1,
+        "type": "white_bunny",
+        "name": "White Bunny",
         "health": 60,
         "movement_pool": 3,
         "attack": 6,
