@@ -11,7 +11,7 @@ Going into development, I had three basic requirements for the programming tool 
 The other two requirements have been set in order to attempt to hasten the development process as creating a fully functioning prototype of an educational RPG by one programmer in approximately four months of time is a rather idealistic goal, especially for someone with no prior game programming experience. These are choosing a tool that includes an intuitive IDE with a fast learning curve as opposed to a bare bones library and one that is geared specifically towards creating 2D games in order to reduce the need for performance optimization.
 
 Engine | License | Cost | Targets | Focus | Language
--- | - | - | - | - | - | -- | -- | --
+-- | -- | -- | -- | -- | --
 Construct 2 | Proprietary | $129.99 ($429.99) | Mobile, (PC, web, Wii U) | 2D games | N/A (JavaScript)
 Defold | Proprietary | free | PC, mobile, web | 2D games | Lua
 Superpowers | ISC (GNU GPL compatible)| free | PC, mobile, web | 2D+3D games | TypeScript
