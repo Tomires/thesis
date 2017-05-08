@@ -20,7 +20,15 @@ After casting a spell, the player is presented with a query containing a kanji c
 
 ### Challenge system
 
-The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition.
+The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition. In contrast with quests, these goals deal exclusively with battle mechanics. The implemented examples are as following:
+- Kill an enemy before switching targets.
+- Use a spell at most once a turn.
+- Finish in 10 turns.
+- Finish without taking any damage.
+- Do not fail a single query.
+- Do not move during entire fight.
+
+Each challenge is assigned modifiers, which increase the amount of experience and currency gained on conclusion of the fight should the challenge be successfully completed.
 
 ## Architecture
 
@@ -144,7 +152,7 @@ ja | じゃ | ju | じゅ　| jo | じょ
 
 #### Challenges
 
-Picks two random entries from the list of available challenges and afterwards keeps track of their status (in progress, successfully completed, failed). Due to the need to incorporate hooks into other scripts, the challenge list is hardcoded and therefore doesn't depend on an external data structure.
+Picks two random entries from the list of available challenges and afterwards keeps track of their status (in progress, successfully completed, failed). Due to the need to incorporate hooks into other scripts, the challenge list is hard coded and therefore doesn't depend on an external data structure.
 
 #### Spell
 
