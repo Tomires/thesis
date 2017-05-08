@@ -65,6 +65,7 @@ The file contains information on player levels and query phrases associated with
 
 ```JSON
 [
+
     {
         "kanji": "日",
         "kun": "ひ",
@@ -80,6 +81,26 @@ The file contains information on player levels and query phrases associated with
 ### Script entities
 
 The following section contains information about script entities used in both the battle and exploration part of the game.
+
+#### Save file
+
+Retrieves data from and saves data to player's save file. Handles initialisation of new save files with default values.
+
+#### Proxy
+
+Collection proxies in Defold handle loading and unloading collections, structures that contain game objects and can be thought of as scenes of the game. The proxy scripts handles switching between the menu, battle and exploration parts of the game, allocating system resources as needed.
+
+#### Menu GUI
+
+Includes input handling for buttons in the game menu.
+
+#### Tutorial GUI
+
+Controls display of tutorial images.
+
+#### Render script
+
+The game includes an implementation of a render script that maintains fixed aspect ratio by Defold developer Björn Ritzl.
 
 #### Map
 
