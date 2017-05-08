@@ -1,5 +1,7 @@
 # Requirements
 
+This section includes specification of functional and non-functional requirements for our game.
+
 ## Functional
 
 ### Educational system

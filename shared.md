@@ -4,7 +4,7 @@
 
 ### Persistence module
 
-The persistence module stores all non-static information and changes dynamically depending on player's actions.
+The persistence module stores all non-static information and changes dynamically depending on player's actions. It also handles initialization in the case of player starting a new game.
 
 ### Tile rendering
 

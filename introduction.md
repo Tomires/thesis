@@ -4,6 +4,8 @@ Modern technologies enable students to acquire new language skills with relative
 
 The purpose of this thesis is to draw from the best game design, programming and educational practices and to ultimately create a prototype of a full-fledged interactive videogame experience that facilitates learning Japanese kanji characters.
 
+The game is a joint project between myself and my friend David Nguyen, a student of Art & Design at Prague College, who is involved in the process of creating the vast majority of graphical assets used within the game.
+
 ## Japanese writing system
 
 Contemporary Japanese language makes use of the following three types of scripts in addition to latin characters.
@@ -15,8 +17,6 @@ Kanji are adopted logographic Chinese characters. They are the main building blo
 ### Hiragana
 
 Hiragana is one of the two syllabaries used in Japanese. It is used in forming grammatic constructs and additionally can be utilised in place of kanji for obsolete or more difficult kanji in the form of furigana. This practice is common with academic textbooks for younger students and non-native speakers.
-
-[syllabary - a set of written characters each of which is used to represent a syllable]
 
 ### Katakana
 
