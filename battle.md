@@ -89,7 +89,7 @@ The following section contains information about script entities used within the
 
 #### Battle logic
 
-Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A-star algorithm is used to find the shortest paths for enemies to follow. Validity of cells in regards to movement and/or casting is determined from the map's logic layer.
+Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A-star algorithm is used to find the shortest paths for both the enemies and the player to follow. Validity of cells in regards to movement and/or casting is determined from the map's logic layer.
 
 #### Battle GUI
 

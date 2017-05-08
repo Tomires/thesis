@@ -227,3 +227,17 @@ This structure includes the name of each area, map file used, list of items sold
 ```
 
 ### Script entities
+
+The following section contains information about script entities used within the exploration part of the game.
+
+#### Explore logic
+
+Controls the flow of the out-of-battle mechanics. Structures included within control movement and actions of the player character and both enemies and NPCs present on the map. A-star algorithm is used to find the shortest paths for the player to follow, enemies move randomly to unoccupied neighboring tiles. Validity of cells in regards to movement is determined based on the map's logic layer.
+
+#### Explore GUI
+
+Updates information present on the game's user interface. The script also manages all keyboard and mouse/touch input from the player when out of battle. Due to complicated UI elements, the GUI is divided between four files - inventory, encyclopaedia and quest GUIs and the explore GUI file, which includes links to the remaining three files via built-in template functionality. Unfortunately, Defold doesn't allow the developer to add separate GUI scripts to linked GUI files.
+
+#### Quest
+
+**to_do**
