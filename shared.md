@@ -21,11 +21,11 @@ While trying both approaches, I have come across a large difference in performan
 
 ### Data structures
 
-The following section includes details on structures of persistent files used throughout the entirety of the game. Both the map files and the persistence module are stored inside files containing Lua tables. The Level data structure is stored in a JSON file.
+The following section includes details on structures of persistent files used throughout the entirety of the game. Both the map files and the persistence module are stored inside files containing Lua tables. The Level and Enemy data structures are stored in JSON files.
 
 #### Persistence module
 
-The persistence module acts as a save file. It contains data on player's success rate for each kanji phrase, entries on active and completed quests, current NPC dialogs, items located in player's inventory, their level and experience points, which determine the size of the kanji selection pool.
+The persistence module acts as a save file. It contains data on player's success rate for each kanji phrase, entries on active and completed quests, current NPC dialogs, items located in player's inventory and equipped on their character, balance of in-game currency, their level and experience points, which determine the size of the kanji selection pool.
 
 #### Map
 
@@ -37,6 +37,27 @@ The game uses four map layers to store data:
 2. object - contains smaller obstacles such as rocks or tile decorations,
 3. logic - used by the battle logic script to determine whether a cell is accessible,
 4. terrain - contains base tiles.
+
+#### Enemy
+
+The file includes information about all enemies in the game. Each enemy entry contains a type definition used internally within the game, name displayed as part of battle GUI, initial health value, number of moves, base damage, attack range and number of experience points awarded to the player for a successful kill.
+
+```JSON
+[
+
+    {
+        "id": 1,
+        "type": "white_bunny",
+        "name": "White Bunny",
+        "health": 60,
+        "movement_pool": 3,
+        "attack": 6,
+        "range": 1,
+        "experience": 30
+    },
+...
+]
+```
 
 #### Level
 

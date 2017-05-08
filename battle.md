@@ -16,11 +16,11 @@ Each spell has a kanji difficulty setting associated with it that controls which
 
 During the process of choosing phrases for the game, I have decided to divide these into two sets. The first contains kun'yomi readings of characters and therefore includes mostly verbs. The second contains on'yomi readings, which are typically present in kanji compounds. The choice of kanji depends on player character's level and their previous actions. The system prioritizes kanji with high error rate.
 
-After casting a spell, the player is presented with a query containing a kanji character and they are required to type a correct kana transcription. Each spell has a set base damage, which decreases depending on the time it takes to answer the query.
+After casting a spell, the player is presented with a query containing a kanji character and they are required to type a correct kana transcription. Each spell has a set base damage, which decreases depending on the time it takes to answer the query. I originally planned on introducing an element of randomness to the amount of damage given, but doing so would negate the effects of the educational element.
 
 ### Challenge system
 
-The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition. In contrast with quests, these goals deal exclusively with battle mechanics. The implemented examples are as following:
+The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition. In contrast with quests, these goals deal exclusively with battle mechanics. Certain challenges are easier than others in order to accommodate all player skill levels. The implemented examples are as following:
 
 - Kill an enemy before switching targets.
 - Use a spell at most once a turn.
@@ -80,26 +80,6 @@ Damage range can either be set to 1 which inflicts damage only on the selected c
         "linear_aoe": 0
     },
     ...
-]
-```
-#### Enemy
-
-The file includes information about all enemies in the game. Each enemy entry contains a type definition used internally within the game, name displayed as part of battle GUI, initial health value, number of moves, base damage, attack range and number of experience points awarded to the player for a successful kill.
-
-```JSON
-[
-
-    {
-        "id": 1,
-        "type": "white_bunny",
-        "name": "White Bunny",
-        "health": 60,
-        "movement_pool": 3,
-        "attack": 6,
-        "range": 1,
-        "experience": 30
-    },
-...
 ]
 ```
 
