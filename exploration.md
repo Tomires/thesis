@@ -68,13 +68,13 @@ On the other hand, we needed a system that adds new kanji characters to the pool
 
 ## Architecture
 
-**add diagram**
+![Architecture diagram](images/diagram_explore.png)
 
 ### Data structures
 
 #### Item
 
-This structure holds data on all items within the game. Each item entry contains an identifier, a name, filename for its inventory icon, value when sold to the vendor NPC, the category definition and effects of the item when used by the player, which are applicable for items from equipment and consumable categories. Equipable items include information about slot that they occupy on the player character.
+This structure holds data on all items within the game. Each item entry contains an identifier, a name, filename for its inventory icon, value when sold to the vendor NPC, the category definition and effects of the item when used by the player, which are applicable for items from equipment and consumable categories. Equipable items include information about slot that they occupy on the player character. Additionally, a description is provided that displays inside GUI tooltips when hovering over the item in question.
 
 ```JSON
 [
@@ -123,6 +123,8 @@ This structure is used when determining spoils of battle. Each entry represents 
 
 #### NPC
 
+The structures includes information on non-playable characters. Each entry includes an identifier, a name of the character which is displayed in dialogues, name of the animation that represents the character, position within the game world specified by the map area and position coordinates, a flag which specifies whether the NPC functions as a vendor and an initial dialogue that is added to a new save file at the start of the game.
+
 ```JSON
 [
 
@@ -130,8 +132,9 @@ This structure is used when determining spoils of battle. Each entry represents 
         "id": 1,
         "name": "Old Guy",
         "sprite": "npc_man",
+        "map_area": 1,
         "position": [12, 24],
-        "vendor": 0,
+        "vendor": false,
         "starting_dialogue": 25
     }
     ...
@@ -156,6 +159,8 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
 
 #### Quest
 
+This structure contains information on quests. Each entry contains an identifier, identifiers of both the NPC that gives the quest to the player and the one that gives the reward for a finished quest, the dialogues that are triggered when the quest is available and complete respectively, flags that hold information on whether the quest is repeatable and whether it is a quest from the main storyline (these display with a different icon), the title of the quest and description visible in the quest GUI, a prerequisites array that holds identifiers of quests that need to be completed before the quest in question becomes available, triggers that specify player actions required to complete the quest (as with challenges these are hardcoded) and information about rewards in experience, currency and items.
+
 ```JSON
 [
 
@@ -170,7 +175,7 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
         "prerequisites": [],
         "triggers": [["KILL_ENEMY", 1, 1]],
         "exp_reward": 500,
-        "gold_reward": 60,
+        "currency_reward": 60,
         "item_reward": [1, 1, 5],
         "start_npc_dialogue": 2,
         "end_npc_dialogue": 6
@@ -181,7 +186,7 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
 
 #### Map area
 
-This structure includes the name of each area, map file used and information about enemy mobs. Every mob has a position associated with it, the enemies respawn at the specified location on map load and then proceed to wander about. The level designer has an option to specify the number of enemies and their type for each mob in the 'enemies' array. This information is not required, if it is not provided, the map loading routine will generate a random assortment of enemies that can be controlled using the 'enemy_types' array and the 'max_mob_size' field. The former contains nested arrays, which specify enemy id and spawn probability. The sum of probabilities can be any positive number. The 'max_mob_size' field allows for choosing the maximum mob size as generated mobs differ in number of enemies.
+This structure includes the name of each area, map file used, list of items sold by vendors in the area and their costs and information about enemy mobs. Every mob has a position associated with it, the enemies respawn at the specified location on map load and then proceed to wander about. The level designer has an option to specify the number of enemies and their type for each mob in the 'enemies' array. This information is not required, if it is not provided, the map loading routine will generate a random assortment of enemies that can be controlled using the 'enemy_types' array and the 'max_mob_size' field. The former contains nested arrays, which specify enemy id and spawn probability. The sum of probabilities can be any positive number. The 'max_mob_size' field allows for choosing the maximum mob size as generated mobs differ in number of enemies.
 
 ```JSON
 [
@@ -208,6 +213,13 @@ This structure includes the name of each area, map file used and information abo
                 "position": [36, 19]
             },
  	        ...
+        ],
+        "vendor_items": [
+            {
+                "item": 4,
+                "cost": 400
+            },
+            ...
         ]
     }
     ...
