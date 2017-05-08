@@ -21,3 +21,47 @@ Hiragana is one of the two syllabaries used in Japanese. It is used in forming g
 ### Katakana
 
 Katakana is the other Japanese syllabary used exclusively for transcription of words originated in other languages, most commonly English and German. Some words are not transcribed into katakana, but are instead written using their original latin form.
+
+## Chapters
+
+The thesis is comprised of the following chapters.
+
+### Analysis
+
+In this section we analyze examples of gaming and non-gaming software products that aim to teach their user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyze their combat mechanics. We conclude the section by selecting features that would form the basis for our game.
+
+### Requirements
+
+Includes specification of functional and non-functional requirements for our game.
+
+### Technology
+
+In this section we introduce tools that are used during development of the game. We take a look at the game engine used and some of the reasons behind choosing it, the external map editor and the reasoning as to why use one, data storage formats for storing many structures included within the game and a version control system used during development.
+
+### Battle system
+
+Includes description of combat mechanics, the learning and the challenge systems used in the game, a diagram detailing communication between components and a detailed description of these components and data structures exclusive to the battle portion of the game.
+
+### Exploration system
+
+Details the questing system used within our game, introduces the item system and item economy and talks about the experience system. As with the battle section, we discuss data structures and script components exclusive to this part of the game.
+
+### Shared elements
+
+Contains information on data structures and script components used outside of and in both the battle and exploration parts of the game. Details the persistence module and the tile rendering algorithm used.
+
+### Tutorial
+
+Details the process of introducing the player to key gameplay mechanics via a series of images that guide the player to perform specific actions.
+
+### Testing
+
+Includes lessons learnt from user testing the game on two subjects.
+
+### Future additions
+
+This section details some of many possible ways of improving the game.
+
+### Conclusion
+
+We discuss the current state of the the game's implementation and issues encountered.
