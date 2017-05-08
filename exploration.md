@@ -48,6 +48,18 @@ The resources category contains items that can be used to create consumables, us
 
 ### Economy
 
+Activities that bring items into economy are called item fountains (or faucets, depending on literature), activites that remove items from the game's economy are called item sinks. Balancing the two is a vital part of role-playing game design.
+
+Designing item fountains is a fairly straightforward process. In our game, there are presently two such examples - winning an item in combat or acquiring it as a quest reward.
+
+Creating item sinks is a comparatively more difficult process. Examples of item sinks used in RPGs today include maintenance fee, where an item will lose its effect unless some amount of currency is paid periodically, limited inventory space (and to a lesser degree a weight system), where the player needs to dump an old item in order to acquire a new one, or a crafting system, which lets players exchange a combination of items for a new item.
+
+In my game I have designed three item sinks. Consumable items can be used during battle to heal the player and perform additional effects. Certain resource items are utilised in quests. Last but not least, items can be traded to a vendor NPC in exchange for currency.
+
+![Economy diagram](images/item_economy.png)
+
+Future implementation of a crafting system will introduce an additional item fountain - the gathering node. Additionally, the process of crafting itself is both an item fountain and an item sink.
+
 ### Learning progression
 
 
