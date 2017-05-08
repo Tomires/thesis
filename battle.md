@@ -21,6 +21,7 @@ After casting a spell, the player is presented with a query containing a kanji c
 ### Challenge system
 
 The challenge system introduces a set of voluntary battle-specific goals that are meant to incentivize certain styles of play in order to alleviate repetition. In contrast with quests, these goals deal exclusively with battle mechanics. The implemented examples are as following:
+
 - Kill an enemy before switching targets.
 - Use a spell at most once a turn.
 - Finish in 10 turns.

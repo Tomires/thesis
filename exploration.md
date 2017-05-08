@@ -60,34 +60,38 @@ The resources category contains items that can be used to create consumables, us
 
 #### Item
 
-This structure holds data on all items within the game. Each item entry contains an identifier, a name, filename for its inventory icon, value when sold to the vendor NPC, the category definition and effects of the item when used by the player, which are applicable for items from equipment and consumable categories.
+This structure holds data on all items within the game. Each item entry contains an identifier, a name, filename for its inventory icon, value when sold to the vendor NPC, the category definition and effects of the item when used by the player, which are applicable for items from equipment and consumable categories. Equipable items include information about slot that they occupy on the player character.
 
 ```JSON
 [
 
     {
-        "id": 1,
-        "name": "Potion",
-        "icon": "potion",
-        "value": 30,
-        "category": "Consumable",
+        "id": 15,
+        "name": "Ring of life",
+        "icon": "life_ring",
+        "description": "A ring with an integrated defibrilation unit.\n+15 health points\n-20% damage given",
+        "value": 0,
+        "category": "equipment",
+        "slot": "accessory",
         "effects": {
-            "health": 60
+            "health": 15,
+            "damage_given": -0.2
         }
-    }
+    },
     ...
 ]
 ```
 
 #### Droprate
 
-This structure is used when determining spoils of battle. Each entry represents an enemy. In addition to the enemy identifier, it contains a nested array of items obtainable from winning a battle against that enemy. Each entry in this nested array contains an item identifier and a probability value, which is a positive number that determines the probability of dropping the item in decimal fractions.
+This structure is used when determining spoils of battle. Each entry represents an enemy. In addition to the enemy identifier, it contains a nested array of items obtainable from winning a battle against that enemy. Each entry in this nested array contains an item identifier and a probability value, which is a positive number that determines the probability of dropping the item in decimal fractions. The currency value determines the maximum amount of in-game currency attainable by defeating a single enemy. The resulting amount ranges from 60 to 100 percent.
 
 ```JSON
 [
 
     {
         "enemy_id": 1,
+        "currency": 5,
         "items": [
             {
                 "item_id": 1,
@@ -111,6 +115,7 @@ This structure is used when determining spoils of battle. Each entry represents 
     {
         "id": 1,
         "name": "Old Guy",
+        "sprite": "npc_man",
         "position": [12, 24],
         "vendor": 0,
         "starting_dialogue": 25
@@ -127,12 +132,11 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
 [
 
     {
-        "id": 25,
-        "text": "I have a favour to ask.
-                My crops have been decimated by rabbits you see...",
-        "next_dialogue": 26
-  }
-  ...
+        "id": 2,
+        "text": "Hello there stranger, I haven't seen a fresh soul as of late. You seem to be new around these parts, am I right? Well then... *ahem* let me introduce you to...",
+        "next_dialogue": 3
+    },
+    ...
 ]
 ```
 
@@ -142,17 +146,20 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
 [
 
     {
-        "id": 5,
-        "npc": 1,
+        "id": 1,
+        "start_npc": 1,
+        "end_npc": 1,
         "repeatable": false,
-        "description": "Reclaim the land by killing the Elder Rabbit
-                        and four of its friends!",
-        "prerequisites": [2],
-        "triggers": [["KILL_ENEMY", 2, 1], ["KILL_ENEMY", 1, 4]],
+        "story": true,
+        "title": "Into the fray",
+        "description": "The old man wants you to defeat a rabbit to prove your worth. You aren't going to let him down, are you?",
+        "prerequisites": [],
+        "triggers": [["KILL_ENEMY", 1, 1]],
         "exp_reward": 500,
         "gold_reward": 60,
         "item_reward": [1, 1, 5],
-        "set_npc_dialogue": 54
+        "start_npc_dialogue": 2,
+        "end_npc_dialogue": 6
     }
     ...
 ]
@@ -164,6 +171,7 @@ This structure includes the name of each area, map file used and information abo
 
 ```JSON
 [
+
     {
         "id": 1,
         "name": "Rabbit Island",
