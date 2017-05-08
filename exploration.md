@@ -54,7 +54,7 @@ Designing item fountains is a fairly straightforward process. In our game, there
 
 Creating item sinks is a comparatively more difficult process. Examples of item sinks used in RPGs today include maintenance fee, where an item will lose its effect unless some amount of currency is paid periodically, limited inventory space (and to a lesser degree a weight system), where the player needs to dump an old item in order to acquire a new one, or a crafting system, which lets players exchange a combination of items for a new item.
 
-In my game I have designed three item sinks. Consumable items can be used during battle to heal the player and perform additional effects. Certain resource items are utilised in quests. Last but not least, items can be traded to a vendor NPC in exchange for currency.
+In my game I have designed three item sinks. Consumable items can be used during battle to heal the player and perform additional effects. Certain resource items are utilised in quests. Last but not least, items can be traded to a vendor NPC in exchange for currency (not pictured in the diagram for the sake of simplicity).
 
 ![Economy diagram](images/item_economy.png)
 
@@ -62,7 +62,9 @@ Future implementation of a crafting system will introduce an additional item fou
 
 ### Learning progression
 
+As hinted in previous chapters, the game includes an experience system. Most role-playing games use this system to lock players out of content that is meant to be experienced in later stages of the game. They do this by introducing statistics, which increase with level or by specifying level requirements for equipment. When designing the game, I wanted to stay away as much as possible from arbitrary numbers that influence the might of player's character and instead let the strategy and most importantly knowledge of kanji characters determine player's success.
 
+On the other hand, we needed a system that adds new kanji characters to the pool of phrases that are used in the battle system. The solution is simple - when the player gains a new level, they unlock a new kanji character.
 
 ## Architecture
 
