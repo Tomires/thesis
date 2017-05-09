@@ -4,9 +4,9 @@ This section details the process of introducing the player to key gameplay mecha
 
 ![In-game screenshot of the new player experience](images/tutorial.png)
 
-# Steps
+## Steps
 
-## Exploration mode (first part)
+### Exploration mode (first part)
 The tutorial begins immediately after starting a new game.
 
 - The first picture shows the player how to open the kanji encyclopedia GUI.
@@ -23,7 +23,7 @@ The tutorial begins immediately after starting a new game.
 
 - After closing the dialogue, the player is told to attack their first enemy, which is incidentally an objective of their first quest.
 
-## Battle mode
+### Battle mode
 
 - Upon entering the battle mode, the player is given instructions on movement.
 
@@ -37,7 +37,7 @@ The tutorial begins immediately after starting a new game.
 
 - After clicking on the end turn button, the player is instructed to finish the battle by defeating all enemies.
 
-## Exploration mode (second part)
+### Exploration mode (second part)
 
 - After the player emerges victorious in their first battle, they are given instructions on how to finish their quest.
 

@@ -103,7 +103,7 @@ This script is utilized during the process of casting a spell. It chooses a kanj
 
 Works in conjunction with battle GUI to translate Latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. The solution for more complex cases, such as the insertion of sokuon characters is inspired by the behaviour of Microsoft Input Method Editor for Japanese.
 
-![Simplified state automata for first two rows of the hiragana conversion table](images/kana_parser.png)
+![Simplified state automata for the first two rows of the hiragana conversion table](images/kana_parser.png)
 
 :octocat: | a | i | u | e | o | ya | yu | yo
 -- | - | - | - | - | - | -- | -- | --
