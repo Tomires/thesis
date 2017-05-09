@@ -10,7 +10,7 @@ The process of gathering from a resource node will involve answering a query sim
 
 ## Expansions
 
-Expansions will typically introduce new sets of kanji characters into the game, new gameplay areas and quests. I believe the expansions should be offered as a stand-alone product so that players with intermediate knowledge of Japanese can skip the learning process for kanji they have already memorized. However, I think the expansions should introduce a gameplay mechanic for practicing kanji from previous expansions and the base game. Although they can be played through in any order, the persistence module will be the same for all expansions.
+Expansions will typically introduce new sets of kanji characters into the game, new gameplay areas and quests. I believe the expansions should be offered as a stand-alone product so that players with intermediate knowledge of Japanese can skip the learning process for kanji they have already memorized. However, I think the expansions should introduce a gameplay mechanic for practising kanji from previous expansions and the base game. Although they can be played through in any order, the persistence module will keep track of progress across all expansions.
 
 ### Multiplayer
 
@@ -18,4 +18,4 @@ One interesting functionality an expansion can bring is the addition of a multip
 
 ## Other versions
 
-As the game's design is modular, it would be very easy to create a Chinese version of the game that uses Pinyin romanization instead of hiragana. I also have plans for a demo, which would teach the player hiragana characters, thus making the game more accessible to complete beginners in Japanese.
+As the game's design is modular, it would be very easy to create a Chinese version of the game that uses Pinyin romanization instead of hiragana. We also have plans for a demo, which would teach the player hiragana characters, thus making the game more accessible to complete beginners in Japanese.

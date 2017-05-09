@@ -2,25 +2,27 @@
 
 ## Introduction
 
+The following section details choices made regarding key design elements included within the exploration system and the motivations behind these choices.
+
 ### Questing system
 
 The quest system is an important plot device that motivates the player and helps alleviate the negative effects of grind mechanics on player retention. While researching the possible quest archetypes, I wanted to focus on three aspects - repeatability, quests as means of motivating the player to move between game areas and variability.
 
 #### Repeatability
 
-The first aspect concerns quests that are meant to be experienced multiple times. Repeatable quests entice the player to return to previous areas and usually provide rewards that are exclusive to a particular region of the map they take place in.
+The first aspect concerns quests that are meant to be experienced multiple times. Repeatable quests entice the player to return to previous areas and usually provide rewards that are exclusive to the particular region of the map they take place in.
 
 #### Exploration quests
 
-These quests are generally one-time only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. I will work with branching quest arcs, however, for the sake of simplicity, no two quests can be mutually exclusive.
+These quests are generally one-time-only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. We will work with branching quest arcs, however, for the sake of simplicity, no two quests can be mutually exclusive.
 
-The following diagram illustrates the relationships between quests. Green exclamation marks symbolize main quests, while yellow marks symbolize side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
+The following diagram illustrates the relationships between quests. Green exclamation marks symbolise main quests, while yellow marks symbolise side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
 
 ![Quests diagram](images/diagram_quests.png)
 
 #### Variability
 
-One issue a lot of modern role-playing games face is the lack of variability when it comes to quests. The player is generally asked to kill a certain number of enemies or to collect certain items. To help combat this fact, I have listed below some examples that can be used within my game:
+One issue a lot of modern role-playing games face is the lack of variability when it comes to quests. The player is generally asked to kill a certain number of enemies or to collect certain items. To help combat this fact, I have listed below some examples that can be used within our game:
 
 - character hunting quest (triggering conversations with different NPCs),
 - scavenger hunt (locating certain cues hidden within the environment),
@@ -36,11 +38,11 @@ The game has three categories of items. Equipment, which the player can wear to 
 
 Equipment in most modern role-playing games is designed to increase arbitrary player statistics. As a player, I feel this approach is rather artificial and lacking. Besides, in an educational game, focus should be given on the educational element. The proficiency of the player should be the main factor in determining their potency.
 
-Therefore, I have designed the equipment to alter game mechanics in ways that both benefit and punish the player in certain areas, a mechanic similar to the Idol system in Dofus. For example, certain players might prefer to have more time when answering queries. They can wear an item that increases available time, but decreases damage that the spell causes. Other players could prefer the opposite, so another item will exist which decreases available time and increases damage caused, thus rewarding faster memory recall skills.
+Therefore, we have designed the equipment to alter game mechanics in ways that both benefit and punish the player in certain areas, a mechanic similar to the Idol system in Dofus. For example, certain players might prefer to have more time when answering queries. They can wear an item that increases available time, but decreases damage that the spell causes. Other players could prefer the opposite, so another item will exist which decreases available time and increases damage caused, thus rewarding players with faster memory recall skills.
 
 #### Consumables
 
-Consumable items are meant to be used within the game's battle mode. They generally provide additional health points to the player and would be essential for more difficult fights. They can also provide supplementary effects such as temporary stuns, increase available movement points and more. No consumables should provide damage dealing capabilities as doing so would interfere with spells and the associated learning element. When using a consumable, the player does not have to answer a query.
+Consumable items are meant to be used within the game's battle mode. They generally provide additional health points to the player and can be essential for more difficult fights. They can also provide supplementary effects such as temporary stuns, increase available movement points and more. No consumables should provide damage dealing capabilities as doing so would interfere with spells and the associated learning element. When using a consumable, the player does not have to answer a query.
 
 #### Resources
 
@@ -48,9 +50,9 @@ The resources category contains items that can be used to create consumables, us
 
 ### Economy
 
-Activities that bring items into economy are called item fountains (or faucets, depending on literature), activites that remove items from the game's economy are called item sinks. Balancing the two is a vital part of role-playing game design.
+Activities that bring items into economy are called item fountains (or faucets, depending on literature), activities that remove items from the game's economy are called item sinks. Balancing the two is a vital part of role-playing game design.
 
-Designing item fountains is a fairly straightforward process. In our game, there are presently two such examples - winning an item in combat or acquiring it as a quest reward.
+Designing item fountains is a fairly straightforward process. In our game, there are presently two such examples - winning an item in combat and acquiring it as a quest reward.
 
 Creating item sinks is a comparatively more difficult process. Examples of item sinks used in RPGs today include maintenance fee, where an item will lose its effect unless some amount of currency is paid periodically, limited inventory space (and to a lesser degree a weight system), where the player needs to dump an old item in order to acquire a new one, or a crafting system, which lets players exchange a combination of items for a new item.
 
@@ -62,7 +64,7 @@ Future implementation of a crafting system will introduce an additional item fou
 
 ### Learning progression
 
-As hinted in previous chapters, the game includes an experience system. Most role-playing games use this system to lock players out of content that is meant to be experienced in later stages of the game. They do this by introducing statistics, which increase with level or by specifying level requirements for equipment. When designing the game, I wanted to stay away as much as possible from arbitrary numbers that influence the might of player's character and instead let the strategy and most importantly knowledge of kanji characters determine player's success.
+As hinted in previous chapters, the game includes an experience system. Most role-playing games use this system to lock players out of content that is meant to be experienced in later stages of the game. They do this by introducing statistics, which increase with level or by specifying level requirements for equipment. When designing the game, we wanted to stay away as much as possible from arbitrary numbers that influence the might of player's character and instead let the strategy and most importantly knowledge of kanji characters determine player's success.
 
 On the other hand, we needed a system that adds new kanji characters to the pool of phrases that are used in the battle system. The solution is simple - when the player gains a new level, they unlock a new kanji character.
 
@@ -71,6 +73,8 @@ On the other hand, we needed a system that adds new kanji characters to the pool
 ![Architecture diagram](images/diagram_explore.png)
 
 ### Data structures
+
+The following section includes details on structures of files used throughout the exploration part of the game. All files are in human-readable JSON format.
 
 #### Item
 
@@ -159,7 +163,7 @@ Dialogues in the game are ordered in a linear fashion. There are no instances of
 
 #### Quest
 
-This structure contains information on quests. Each entry contains an identifier, identifiers of both the NPC that gives the quest to the player and the one that gives the reward for a finished quest, the dialogues that are triggered when the quest is available and complete respectively, flags that hold information on whether the quest is repeatable and whether it is a quest from the main storyline (these display with a different icon), the title of the quest and description visible in the quest GUI, a prerequisites array that holds identifiers of quests that need to be completed before the quest in question becomes available, triggers that specify player actions required to complete the quest (as with challenges these are hardcoded) and information about rewards in experience, currency and items.
+This structure contains information on quests. Each entry contains an identifier, identifiers of both the NPC that gives the quest to the player and the one that gives the reward for a finished quest, the dialogues that are triggered when the quest is available and completed respectively, flags that hold information on whether the quest is repeatable and whether it is a quest from the main storyline (these are displayed in the GUI with a different icon), the title of the quest and description visible in the quest GUI, a prerequisites array that holds identifiers of quests that need to be completed before the quest in question becomes available, triggers that specify player actions required to complete the quest (as with challenges these are hard coded) and information about rewards in experience, currency and items.
 
 ```JSON
 [
@@ -236,7 +240,7 @@ Controls the flow of the out-of-battle mechanics. Structures included within con
 
 #### Explore GUI
 
-Updates information present on the game's user interface. The script also manages all keyboard and mouse/touch input from the player when out of battle. Due to complicated UI elements, the GUI is divided between four files - inventory, encyclopaedia and quest GUIs and the explore GUI file, which includes links to the remaining three files via built-in template functionality. Unfortunately, Defold doesn't allow the developer to add separate GUI scripts to linked GUI files.
+Updates information present on the game's user interface. The script also manages all keyboard and mouse/touch input from the player when out of battle. Due to complicated UI elements, the GUI is divided between four files - inventory, encyclopaedia and quest GUIs and the explore GUI file, which includes links to the remaining three files via built-in template functionality. Unfortunately, Defold does not allow the developer to add separate GUI scripts to linked GUI files.
 
 #### Quest
 

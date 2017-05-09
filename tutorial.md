@@ -27,7 +27,7 @@ The tutorial begins immediately after starting a new game.
 
 - Upon entering the battle mode, the player is given instructions on movement.
 
-- After moving one or more tiles, the player is told about spells and core battle mechanics (movement and action points).  They are told to activate a spell.
+- After moving one or more tiles, the player is told about spells and core battle mechanics (movement and action points). They are then told to activate a spell.
 
 - After clicking on a spell icon, the player is instructed to choose a target.
 
@@ -35,7 +35,7 @@ The tutorial begins immediately after starting a new game.
 
 - Upon answering the query, the player is told to end their turn.
 
-- After clicking on the end turn button, the player is instructed to finish the battle by killing all enemies.
+- After clicking on the end turn button, the player is instructed to finish the battle by defeating all enemies.
 
 ## Exploration mode (second part)
 
@@ -47,6 +47,6 @@ The tutorial begins immediately after starting a new game.
 
 - After equipping the article of clothing, they are told about a follow-up quest, which concerns battle challenges.
 
-- An explanation of the challenge system follows.
+- An explanation of the challenges system follows.
 
-Upon completion of one challenge, the tutorial ends.
+Upon completion of a single challenge, the tutorial ends.

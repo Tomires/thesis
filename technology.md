@@ -4,13 +4,13 @@ This chapter includes tools utilised during development of the game and discusse
 
 ## Defold
 
-Going into development, I had three basic requirements for the programming tool used in the process. First, it has to support all major desktop and mobile platforms in order to satisfy the supportability requirements.
+Going into development, we had three basic requirements for the programming tool used in the process. First, it has to support all major desktop and mobile platforms in order to satisfy the supportability requirements.
 
 ![Screenshot of Defold Editor 2](images/defold.png)
 
 The other two requirements have been set in order to attempt to hasten the development process as creating a fully functioning prototype of an educational RPG by one programmer in approximately four months of time is a rather idealistic goal, especially for someone with no prior game programming experience. These are choosing a tool that includes an intuitive IDE with a fast learning curve as opposed to a bare bones library and one that is geared specifically towards creating 2D games in order to reduce the need for performance optimization.
 
-Engine | License | Cost | Targets | Focus | Language
+Engine | License | Cost | Targets | Focus | Programming language
 -- | -- | -- | -- | -- | --
 Construct 2 | Proprietary | $129.99 ($429.99) | Mobile, (PC, web, Wii U) | 2D games | N/A (JavaScript)
 Defold | Proprietary | free | PC, mobile, web | 2D games | Lua
@@ -19,7 +19,7 @@ Unity | Proprietary | $0 - $125/mo. | PC, mobile, web, consoles | 2D+3D games | 
 
 [Development in Construct 2 is done primarily using a visual event-driven design system. JavaScript is provided as an option.]
 
-I have chosen Defold as the development platform as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. Although console platforms are not officialy supported, some console manufacturers include support for HTML5 games via a web applications wrapper, Nintendo Web Framework is one of the examples. It is also geared towards 2D development, although including 3D assets is possible with slight tweaking of the render script. Defold uses Lua, a lightweight dynamically typed programming language, often used in game development. Defold is also free to use and carries with it no publishing or royalty fees.
+We have chosen Defold as the development platform as it allows for targeting all required platforms - Windows, macOS, Linux, iOS and Android, features a message-driven architecture that is very easy to comprehend and build around, has an active community and as of early 2017, a brand new IDE. Although console platforms are not officially supported, some console manufacturers include support for HTML5 games via a web applications wrapper, Nintendo Web Framework is one of the examples. It is also geared towards 2D development, although including 3D assets is possible through slight tweaking of the render script. Defold uses Lua, a lightweight dynamically typed programming language, often used in game development. Defold is also free to use and carries with it no publishing or royalty fees.
 
 The basic building block used in Defold is called a game object. Game objects can include scripts that control their behaviour, sprites controlling their visual appearance, factories that can be configured to create other game objects and a variety of other components.
 
@@ -27,7 +27,7 @@ Game objects are grouped inside collections, which typically correspond to scene
 
 ![Addressing hierarchy in Defold](images/defold_addressing.png)
 
-The following is an excerpt from code showcasing the messaging system in action. The target of our message is the 'map controller' game object located inside the 'battle' collection. The portion behind the hash character is the component we want to address, in this case a script. The message title is given as the second argument, the third optional argument contains a Lua table that includes variables passed a part of the message.
+The following is an excerpt from code showcasing the messaging system in action. The target of our message is the 'map controller' game object located inside the 'battle' collection. The portion behind the hash character names the component we want to address, in this case a script. The message title is given as the second argument, the third optional argument contains a Lua table that includes variables passed as a part of the message.
 
 ```Lua
 msg.post("battle:/map_controller#script","attack_enemy",
@@ -35,7 +35,7 @@ msg.post("battle:/map_controller#script","attack_enemy",
 
 ```
 
-On the receiving end, all we have to do is to add a construct inside the preset on_message function that resolves the message.
+On the receiving end, all we have to do is to add a construct inside the provided on_message function that resolves the message.
 
 ```Lua
 function on_message(self, message_id, m, sender)
@@ -49,7 +49,7 @@ function on_message(self, message_id, m, sender)
 
 ## Tiled Map Editor
 
-As of April 2017 Defold does not include native support for non-orthogonal tilemaps. Fortunately, there is a number of platform-agnostic map editors available including Tiled, an open-source offering in active development since 2008. It is by far the most popular choice with 2D game creators. I have chosen this software because it enables creation of isometric tilemaps, a deliberate design choice for my game.
+As of May 2017 Defold does not include native support for non-orthogonal tilemaps. Fortunately, there is a number of platform-agnostic map editors available including Tiled, an open-source offering in active development since 2008. It is by far the most popular choice with 2D game creators. We have chosen this software because it enables creation of isometric tilemaps, a deliberate design choice for our game.
 
 ![Screenshot of Tiled Map Editor](images/tiled.png)
 
@@ -61,19 +61,19 @@ Please keep in mind that the aforementioned contents are in no way an exhaustive
 
 ## Data storage
 
-There are two commonly used ways to work with external data sources in Defold, one is to use a Lua table and the other is to utilise the built-in JSON library. The developer is free to implement support for other file types using a Lua library or the C++-based native extension system. As of April 2017 there is no native support for any database engine. One possible workaround could be to run a server-side database with an API endpoint and use Defold's HTTP library, though this process is highly impractical.
+There are two commonly used ways to work with external data sources in Defold, one is to use a Lua table and the other is to utilise the built-in JSON library. The developer is free to implement support for other file types using a Lua library or the C++-based native extension system. As of May 2017 there is no native support for any database engine. One possible workaround could be to run a server-side database with an API endpoint and use Defold's HTTP library, though this process is highly impractical.
 
 ### JSON
 
-I have chosen JSON as the format of choice for storing most of my data structures due to its easy readability, standardization and built-in support in Defold. The size of data I store is not as large as to warrant using a database. Defold supports deserialization of JSON files into Lua tables, however the reverse process is not possible.
+We have chosen JSON as the format of choice for storing most of our data structures due to its easy readability, standardization and built-in support in Defold. The size of data we store is not as large as to warrant using a database. Defold supports deserialization of JSON files into Lua tables, however the reverse process is not possible.
 
 ### Lua table
 
-The engine allows for serialization and deserialization of tables, a basic Lua data structure. Lua tables are not as human readable as JSON, therefore I only use them with map files generated by Tiled, which includes Lua support, and save files containing player statistics. In contrast with JSON, Lua tables can be serialized and saved to an external file using built-in library functions.
+The engine allows for serialization and deserialization of tables, a basic Lua data structure. Lua tables are not as human-readable as JSON, therefore I only use them with map files generated by Tiled, which includes Lua support, and save files containing player statistics. In contrast with JSON, Lua tables can be serialized and saved to an external file using built-in library functions.
 
 ## Git
 
-Git has been chosen as the version control system for this project due to its integration into Defold's user interface and my general familiarity with the tool, though it is hardly practical for larger projects.
+Git has been chosen as the version control system for this project due to its integration into Defold IDE's user interface and my general familiarity with the tool, though it is hardly practical for larger projects.
 
 One issue game developers might encounter while using Git are impracticalities stemming from versioning a large number of sizable binary files that make up the game's assets. The internal '.git' folder can reach large sizes and fetching changes from remote locations can take longer than necessary. Public hosting sites such as GitHub, GitLab and Bitbucket also enforce a size limit on repositories hosted on their sites.
 

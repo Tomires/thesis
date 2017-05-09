@@ -8,7 +8,7 @@ The game is a joint project between myself and my friend David Nguyen, a student
 
 ## Japanese writing system
 
-Contemporary Japanese language makes use of the following three types of scripts in addition to latin characters.
+In this subsection we introduce the Japanese writing system. Contemporary Japanese language makes use of the following three types of scripts in addition to Latin characters.
 
 ### Kanji
 
@@ -20,7 +20,7 @@ Hiragana is one of the two syllabaries used in Japanese. It is used in forming g
 
 ### Katakana
 
-Katakana is the other Japanese syllabary used exclusively for transcription of words originated in other languages, most commonly English and German. Some words are not transcribed into katakana, but are instead written using their original latin form.
+Katakana is the other Japanese syllabary used exclusively for transcription of words originated in other languages, most commonly English and German. Some words are not transcribed into katakana, but are instead written using their original Latin form.
 
 ## Chapters
 
@@ -28,7 +28,7 @@ The thesis is comprised of the following chapters.
 
 ### Analysis
 
-In this section we analyze examples of gaming and non-gaming software products that aim to teach their user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyze their combat mechanics. We conclude the section by selecting features that would form the basis for our game.
+In this section we analyse examples of gaming and non-gaming software products that aim to teach the user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyze their combat mechanics. We conclude the chapter by selecting features that would form the basis for our game.
 
 ### Requirements
 
@@ -48,7 +48,7 @@ Details the questing system used within our game, introduces the item system and
 
 ### Shared elements
 
-Contains information on data structures and script components used outside of and in both the battle and exploration parts of the game. Details the persistence module and the tile rendering algorithm used.
+Contains information on data structures and script components used outside of and in both the battle and exploration parts of the game. Details the persistence module and the used tile rendering algorithm.
 
 ### Tutorial
 
