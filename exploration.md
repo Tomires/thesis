@@ -244,4 +244,13 @@ Updates information present on the game's user interface. The script also manage
 
 #### Quest
 
-**to_do**
+Handles operations concerning quests. Receives updates on triggers and propagates them into the persistence module. Checks on quest status and passes on information about quest markers that display atop NPCs to the map script and general quest information to the explore GUI script to be displayed in relevant UI elements. As with the challenge script in the battle portion, triggers are hard coded due to the need to incorporate hooks into other scripts. There are 5 states a quest can be in. By default, it is inactive and therefore unavailable to the player. After prerequisites are met, the quest enters the available state and is available for the player to accept. The quest-giving NPC displays an exclamation mark on top of their sprite. Once the quest is accepted by the player, it enters the ongoing state. The quest script then looks for triggers associated with the quest. Once conditions of all triggers in the quest have been met, the quest enters the turn-in state. In this state, the quest-ending NPC displays a question mark on top of their sprite and the player is able to turn in their quest and claim their reward, after which the quest enters the completed state, unless it is a repeatable quest, in which case we return the quest to its available state.
+
+The following list includes all triggers that are currently implemented:
+
+- Defeat a certain number of enemies.
+- Complete a certain number of challenges.
+- Obtain a certain number of items.
+- Collect a certain number of kanji tablets (kanji tablets are a metaphor used to represent levels).
+- Visit a location.
+- Collect a certain number of trinkets (items with a physical representation on the game map).
