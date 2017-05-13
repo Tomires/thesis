@@ -28,7 +28,7 @@ The thesis is comprised of the following chapters.
 
 ### Analysis
 
-In this section we analyse examples of gaming and non-gaming software products that aim to teach the user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyze their combat mechanics. We conclude the chapter by selecting features that would form the basis for our game.
+In this section we analyse examples of gaming and non-gaming software products that aim to teach the user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyse their combat mechanics. We conclude the chapter by selecting features that would form the basis for our game.
 
 ### Requirements
 
@@ -56,7 +56,7 @@ Details the process of introducing the player to key gameplay mechanics via a se
 
 ### Testing
 
-Includes lessons learnt from user testing the game on two subjects.
+Includes lessons learned from user testing the game on three individuals.
 
 ### Future additions
 
