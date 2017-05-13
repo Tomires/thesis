@@ -1,5 +1,9 @@
 # Exploration system
 
+![In-game screenshot of the exploration portion](images/explore.png)
+
+This chapter details the questing system used within our game, introduces the item system and item economy and talks about the experience system. As with the battle chapter, we discuss data structures and script components exclusive to this part of the game.
+
 ## Introduction
 
 The following section details choices made regarding key design elements included within the exploration system and the motivations behind these choices.
@@ -14,7 +18,7 @@ The first aspect concerns quests that are meant to be experienced multiple times
 
 #### Exploration quests
 
-These quests are generally one-time-only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are referred to as breadcrumb quests. We will work with branching quest arcs, however, for the sake of simplicity, no two quests can be mutually exclusive.
+These quests are generally one-time-only opportunities that are designed to move the player from one area to another in a smooth and believable fashion. These types of quests are utilised in World of Warcraft, where they are colloquially referred to as breadcrumb quests. We will work with branching quest arcs, however, for the sake of simplicity, no two quests can be mutually exclusive.
 
 The following diagram illustrates the relationships between quests. Green exclamation marks symbolise main quests, while yellow marks symbolise side quests. Main quests are dependent on one another, while side quests are optional. Many main quests are of the breadcrumb type, as discussed in the previous paragraph, though this is not always the case.
 

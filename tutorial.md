@@ -1,6 +1,6 @@
 # Tutorial
 
-This section details the process of introducing the player to key gameplay mechanics via a series of images that guide the player to perform specific actions. This approach was chosen for its ability to immerse the player into the game. We wanted to avoid using complex pop-up dialogues as they detract from the experience. The comparatively small window on top right can be easily ignored if wanted to.
+This chapter details the process of introducing the player to key gameplay mechanics via a series of images that guide the player to perform specific actions. This approach was chosen for its ability to immerse the player into the game. We wanted to avoid using complex pop-up dialogues as they detract from the experience. The comparatively small window on top right can be easily ignored if wanted to.
 
 ![In-game screenshot of the new player experience](images/tutorial.png)
 

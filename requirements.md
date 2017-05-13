@@ -1,6 +1,6 @@
 # Requirements
 
-This section includes specification of functional and non-functional requirements for our game.
+This chapter includes specification of functional and non-functional requirements for our game.
 
 ## Functional
 

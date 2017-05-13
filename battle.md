@@ -1,5 +1,9 @@
 # Battle system
 
+![In-game screenshot of the battle portion](images/battle.png)
+
+This chapter includes description of combat mechanics, the learning and the challenge systems used in the game, a diagram detailing communication between components and a detailed description of these components and data structures exclusive to the battle portion of the game.
+
 ## Introduction
 
 The following section details choices made regarding key design elements included within the battle system and the motivations behind these choices.
@@ -89,7 +93,7 @@ The following section contains information about script entities used in the bat
 
 #### Battle logic
 
-Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A-star algorithm is used to find the shortest paths for both the enemies and the player to follow. Validity of cells in regards to movement and casting is determined by the map's logic layer.
+Controls the flow of a battle. Structures included within control movement, actions and statistics of both the player character and any enemies present on the map. A* search algorithm is used to find the shortest paths for both the enemies and the player to follow. Validity of cells in regards to movement and casting is determined by the map's logic layer.
 
 #### Battle GUI
 
@@ -99,11 +103,19 @@ Updates information present on the game's user interface. The script also manage
 
 This script is utilized during the process of casting a spell. It chooses a kanji with the lowest success rate from the dictionary data structure to use during a query. After completion of the query, it saves the result to a save file.
 
+#### Challenge
+
+Picks two random entries from the list of available challenges and afterwards keeps track of their status (in progress, successfully completed, failed). Due to the need to incorporate hooks into other scripts, the challenge list is hard coded and therefore doesn't depend on an external data structure.
+
+#### Spell
+
+Determines valid targets during the spell casting process based on information present in the spellbook data structure and logic layer of the current map. Also calculates damage based on time taken by the player to answer a query and base damage of the selected spell.
+
 #### Kana parser
 
 Works in conjunction with battle GUI to translate Latin characters written by the player into hiragana. The parser adheres to rules defined by Hepburn romanization system, the most widely used transcription method. The solution for more complex cases, such as the insertion of sokuon characters is inspired by the behaviour of Microsoft Input Method Editor for Japanese.
 
-![Simplified state automata for the first two rows of the hiragana conversion table](images/kana_parser.png)
+![Simplified finite-state automaton for the first two rows of the hiragana conversion table](images/kana_parser.png)
 
 :octocat: | a | i | u | e | o | ya | yu | yo
 -- | - | - | - | - | - | -- | -- | --
@@ -130,11 +142,3 @@ sha | しゃ | shu | しゅ | sho | しょ
 chi | ち | tsu | つ　| cha | ちゃ
 chu | ちゅ | cho | ちょ　| ji | じ
 ja | じゃ | ju | じゅ　| jo | じょ
-
-#### Challenges
-
-Picks two random entries from the list of available challenges and afterwards keeps track of their status (in progress, successfully completed, failed). Due to the need to incorporate hooks into other scripts, the challenge list is hard coded and therefore doesn't depend on an external data structure.
-
-#### Spell
-
-Determines valid targets during the spell casting process based on information present in the spellbook data structure and logic layer of the current map. Also calculates damage based on time taken by the player to answer a query and base damage of the selected spell.

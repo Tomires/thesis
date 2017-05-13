@@ -1,5 +1,7 @@
 # Shared elements
 
+This chapter contains information on data structures and script components used outside of and in both the battle and exploration parts of the game. Additionally, it details the persistence module and the used tile rendering algorithm.
+
 ## Introduction
 
 ### Persistence module

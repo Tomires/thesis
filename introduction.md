@@ -28,7 +28,7 @@ The thesis is comprised of the following chapters.
 
 ### Analysis
 
-In this section we analyse examples of gaming and non-gaming software products that aim to teach the user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyse their combat mechanics. We conclude the chapter by selecting features that would form the basis for our game.
+In this chapter we analyse examples of gaming and non-gaming software products that aim to teach the user Japanese in one form or another. We discuss their learning elements and game mechanics or gamification elements that support the educational framework. We also take a look at two examples from the turn-based role-playing game genre and analyse their combat mechanics. We conclude the chapter by selecting features that would form the basis for our game.
 
 ### Requirements
 
@@ -36,7 +36,7 @@ Includes specification of functional and non-functional requirements for our gam
 
 ### Technology
 
-In this section we introduce tools that are used during development of the game. We take a look at the game engine used and some of the reasons behind choosing it, the external map editor and the reasoning as to why use one, data storage formats for storing many structures included within the game and a version control system used during development.
+In this chapter we introduce tools that are used during development of the game. We take a look at the game engine used and some of the reasons behind choosing it, the external map editor and the reasoning as to why use one, data storage formats for storing many structures included within the game and a version control system used during development.
 
 ### Battle system
 
@@ -44,7 +44,7 @@ Includes description of combat mechanics, the learning and the challenge systems
 
 ### Exploration system
 
-Details the questing system used within our game, introduces the item system and item economy and talks about the experience system. As with the battle section, we discuss data structures and script components exclusive to this part of the game.
+Details the questing system used within our game, introduces the item system and item economy and talks about the experience system. As with the battle chapter, we discuss data structures and script components exclusive to this part of the game.
 
 ### Shared elements
 
@@ -60,7 +60,7 @@ Includes lessons learned from user testing the game on three individuals.
 
 ### Future additions
 
-This section details some of many possible ways of improving the game.
+This chapter details some of many possible ways of improving the game.
 
 ### Conclusion
 

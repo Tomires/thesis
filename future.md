@@ -1,6 +1,6 @@
 # Future additions
 
-This section details some of many possible ways of improving the game.
+This chapter details some of many possible ways of improving the game.
 
 ## Crafting system
 

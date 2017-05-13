@@ -21,7 +21,7 @@ Sessions were each 15 to 20 minutes in length with testers reacting positively t
 
 ### Critical bugs
 
-The game has issues with scaling in Windows 10. When scaling is enabled, the game window either does not fully display or displays partially on a secondary display. This practically limits the use on HiDPI machines running the OS. I did not encounter the issue on machines running macOS, Linux or earlier versions of Windows operating system. I have notified the developers about this behaviour.
+The game has issues with display scaling in Windows 10. When scaling is enabled, the game window either does not fully display or displays partially on a secondary display. This practically limits the use on HiDPI machines running the OS. I did not encounter the issue on machines running macOS, Linux or earlier versions of Windows operating system. I have notified the developers about this behaviour.
 
 Another critical issue regarding the game engine used is the inability to dynamically set a resolution on runtime. The game is currently hard coded to run at a resolution of 1920 by 1080 pixels. If a user attempts to launch the game on a system with a lower resolution, it causes the game to crash on startup. There are two possible ways to solve this issue. One is to create a launcher application which would allow the user to select an appropriate resolution prior to launching the game, an approach used heavily by videogames built using the Unity game engine. The other is to wait for an official roll-out of the Native Extensions system, which should allow for writing code that utilises OS-specific APIs in order to obtain a supported resolution.
 
