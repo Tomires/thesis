@@ -34,7 +34,7 @@ Another critical issue regarding the game engine used is the inability to dynami
 
 ### Game design issues
 
-- The game would benefit from having AoE spells with diagonal targets. In the current state, the player sometimes have no choice but to end the turn without attacking.
+- The game would benefit from having AoE spells with diagonal targets. In the current state, the player sometimes has no choice but to end the turn without attacking.
 - The damage output of more expensive spells should be increased in order to motivate the player to use them more often.
 
 ### User experience
@@ -42,5 +42,5 @@ Another critical issue regarding the game engine used is the inability to dynami
 - The tutorial should limit possible movement during the first battle. It is possible for the player to reach a tile diagonal to the enemy, which leaves the player with no option but to end the turn, thus breaking the tutorial's flow.
 - Players often do not pay enough attention to NPC dialogues, which can create confusing experiences for the player if an NPC instructs them to visit another NPC in order to continue the quest chain.
 - Two testers have made repeated mistakes while answering queries related to parsing a trailing 'n' character. The parser should be modified to convert a trailing 'n' character to the corresponding hiragana character (ん).
-- One tester thought the game wanted them to enter on'yomi or kun'yomi readings of individual characters rather than readings of kanji compounds. The interface has been redesigned to accommodate this issue by including on'yomi and kun'yomi readings on the back of a rotating tablet element as these readings are not complementary to the gameplay experience.
+- One tester thought the game wanted them to enter on'yomi or kun'yomi readings of individual characters rather than readings of kanji compounds. The interface has been redesigned to accommodate this issue by including on'yomi and kun'yomi readings on the back of a rotating tablet element as these readings are complementary to the gameplay experience.
 - One tester had issues navigating the map. The use of isometric perspective means that the player has two possible ways to interpret a cardinal direction. This issue will be partially solved by implementing a map interface in the future version of the game.

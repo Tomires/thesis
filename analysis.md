@@ -1,6 +1,6 @@
 # Existing products
 
-In this chapter we will introduce some of the many examples of non-gaming educational applications as well as a couple educational videogames that I draw expertise from when designing the educational element of my videogame. Also mentioned are examples of the role-playing game genre that include turn-based combat. We conclude the chapter by selecting features that would form the basis for our game.
+In this chapter we will introduce some of the many examples of non-gaming educational applications as well as a couple educational videogames that we draw expertise from when designing the educational element of our videogame. Also mentioned are examples of the role-playing game genre that include turn-based combat. We conclude the chapter by selecting features that would form the basis for our game.
 
 ## Non-gaming applications
 
@@ -57,7 +57,7 @@ As with Memrise and Duolingo, Wanikani includes a profile system, which shows us
 
 ## Gaming applications
 
-The realm of gaming applications that are focused on teaching Japanese is comparatively small. It is very important to distinguish between true gaming experiences and simple mechanics borrowed from the gaming industry. For example, there is a number of "games", whose sole gaming mechanic is the concept of hit points with no further interactivity other than selecting answers to queries. For the purpose of this thesis, we will not classify these applications as games, but rather as non-gaming applications with a gamification element. I have selected three examples that can be thought of as videogames in their own rights.
+The realm of gaming applications that are focused on teaching Japanese is comparatively small. It is very important to distinguish between true gaming experiences and simple mechanics borrowed from the gaming industry. For example, there is a number of "games", whose sole gaming mechanic is the concept of hit points with no further interactivity other than selecting answers to queries. For the purpose of this thesis, we will not classify these applications as games, but rather as non-gaming applications with a gamification element. We have selected three examples that can be thought of as videogames in their own rights.
 
 ### Fude Samurai
 
@@ -119,10 +119,10 @@ One thing that we would like to borrow from Wanikani is the encyclopaedic feel. 
 
 All three non-gaming applications place great deal of attention to gamification elements which stimulate the player. We would like to introduce online profiles in one of the expansions to the game.
 
-When it comes to gaming applications mentioned, I cannot draw from their game design as they come from different videogame genres. I can however take note of mechanics they use to introduce new kanji to the player. Fude Samurai's story mode introduces new kanji gradually by guiding the player through stroke order. As the game places emphasis on teaching the player how to draw kanji characters, it does not need to explain pronunciation in much detail. If the player gets lost, they can practice in the training mode.
+When it comes to gaming applications mentioned, we cannot draw from their game design as they come from different videogame genres. We can however take note of mechanics they use to introduce new kanji to the player. Fude Samurai's story mode introduces new kanji gradually by guiding the player through stroke order. As the game places emphasis on teaching the player how to draw kanji characters, it does not need to explain pronunciation in much detail. If the player gets lost, they can practice in the training mode.
 
 Kanji no Owari seems to be lacking in the learning department. The whole experience seems to be geared towards players familiar with kanji who only need a quick revision. Hiragana Battle seems to include the best learning experience out of the three games mentioned. Thanks to the link with NPCs and story, the learning progression is gradual and does not feel forced.
 
 Lastly, we need to choose between the two approaches to turn-based role-playing games. As we only control one character, the mechanics used in Dofus seem to be a better fit for our game. The query mechanism needs to be linked to a frequently used gameplay mechanic. The most frequently used action in Dofus seems to be spell casting. Thanks to the ability to cast multiple spells per turn, the frequency of queries is higher than it would be if we opted to use Fire Emblem's approach.
 
-Two other mechanics in Dofus that I would like to use are the in-battle challenge system and idols, which are items used to modify battle conditions to make them more challenging for seasoned players in exchange for additional rewards. We would like to utilise this feature in our equipment system.
+Two other mechanics in Dofus that we would like to use are the in-battle challenge system and idols, which are items used to modify battle conditions to make them more challenging for seasoned players in exchange for additional rewards. We would like to utilise this feature in our equipment system.

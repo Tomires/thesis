@@ -12,7 +12,7 @@ In this subsection we introduce the Japanese writing system. Contemporary Japane
 
 ### Kanji
 
-Kanji are adopted logographic Chinese characters. They are the main building blocks of Japanese language used to refer to most objects and actions. In contrast with Chinese, which only features one way of pronunciation, Japanese includes two distinct styles of reading - on'yomi and kun'yomi. The on'yomi reading refers to a phonetic approximation of the original Chinese pronunciation, whereas kun'yomi is the Japanese reading of kanji. Kun'yomi are generally used when the kanji is present either in a stand-alone manner or in combination with hiragana characters. This can be observed in most verbs. On'yomi, on the other hand, are used in kanji compounds.
+Kanji are adopted logographic Chinese characters. They are the main building blocks of Japanese language used to refer to most objects and actions. In contrast with Chinese, which features only one way of pronunciation, Japanese includes two distinct styles of reading - on'yomi and kun'yomi. The on'yomi reading refers to a phonetic approximation of the original Chinese pronunciation, whereas kun'yomi is the Japanese reading of kanji. Kun'yomi are generally used when the kanji is present either in a stand-alone manner or in combination with hiragana characters. This can be observed in most verbs. On'yomi, on the other hand, are used in kanji compounds.
 
 ### Hiragana
 
